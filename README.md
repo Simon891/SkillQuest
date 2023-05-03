@@ -1,2 +1,2 @@
-# SOC-GP17
+# SkillQuest
 Github repository för TIG326 Datadriven Verksamhetsutveckling
