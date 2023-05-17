@@ -1,0 +1,288 @@
+<html><head><meta charset="UTF-8">
+    <style>
+    body{
+        background-color: #252526;
+    }
+    
+    .info_kort{
+        color: white;
+        position: absolute;
+        left:-100%;
+        height: 90%;
+        width: 50%;
+        margin:auto;
+        left:-2000px;
+        right:100%;
+        top: 0px;
+        bottom: 0px;
+        background-color: #1e1e1e;
+        border-radius: 8px;
+        transition: all 3s;
+    }
+    
+    .info_kort p{
+        font-size: 25px;
+    }
+    
+    .fraga{
+        display: none;
+        transition: opacity 1s;
+    }
+    
+    .fraga-svar-btn{
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 25px;
+        color: white;
+        background-color: blue;
+        text-align: center;
+        height: 30px !important;
+        width: 100px !important;
+        margin:auto;
+    }
+    
+    .fraga-svar-btn:hover{
+        background-color: lime;
+    }
+    
+    .forslag-alt{
+        cursor: pointer;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .forslag-alt:hover{
+        color:rgb(136, 0, 255);
+    }
+    
+    #forslag{
+        text-align: center;
+    }
+    
+    #quiz div div{
+        position: relative;
+        opacity: 100;
+        height: auto;
+        margin:10px;
+    }
+    
+    #quiz div{
+        position: absolute;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        height: 90%;
+        width: 90%;
+        opacity: 0;
+    }
+    
+    #start_btn{
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 40px;
+        color: white;
+        background-color: blue;
+        text-align: center;
+        position: absolute;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        height: 50px;
+        width: 150px;
+        opacity: 0;
+        transition: opacity 3s;
+    }
+    #start_btn:hover{
+        background-color: lime;
+    }
+    
+    #logga{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+    
+    #beskrivning p{
+        text-align: center;
+    }
+    
+    #yrke_info div{
+        margin: 10px;
+    }
+    </style>
+        
+    <script>
+        function fadein(E_idI,timI,opa){
+            let get = document.getElementById(E_idI);
+            get.style.display = 'block';
+            setTimeout(function(){
+                get.style.opacity = opa;
+            }, timI);
+        };
+    
+        function show_window(E_id,L,R){
+            let get = document.getElementById(E_id);
+            console.log(get);
+            get.style.left = L;
+            get.style.right = R;
+        };
+    
+        window.onload = function() {
+            fadein("start_btn",0,1);
+        };
+    </script>
+    
+    
+        </head><body>
+            <div id="start_btn" onclick="show_window(&quot;quiz&quot;,&quot;0px&quot;,&quot;0px&quot;); fadein(&quot;start_btn&quot;,0,0); fadein(&quot;fraga-1&quot;,3000,1);">Start</div>
+            <div id="logga">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" viewBox="0 0 474 230" enable-background="new 0 0 474 230" xml:space="preserve">
+                    <path fill="#B2976C" opacity="1.000000" stroke="none" d=" M254.765045,133.446945   C253.401443,134.205002 251.336548,135.317459 250.999802,134.929581   C247.959900,131.428040 245.113098,133.594070 242.058456,134.740555   C231.760269,138.605682 219.484009,134.447006 213.554092,125.215408   C207.572662,115.903564 209.008987,102.705345 216.857620,94.859612   C224.867432,86.852745 237.904602,85.842178 247.628189,92.474472   C256.809204,98.736679 260.719971,110.905426 256.079529,121.158936   C254.218903,125.270157 252.991180,128.878204 254.765045,133.446945  M219.583954,101.202995   C213.154236,110.014313 215.693619,120.246552 222.422577,125.915665   C228.400085,130.951691 236.770523,131.523956 240.962738,128.051636   C240.962738,125.141441 240.962738,123.051247 240.962738,120.961067   C243.226883,121.175537 245.491028,121.390007 248.652100,121.689445   C249.073273,120.978653 250.196991,119.556625 250.824860,117.941803   C253.770828,110.365112 250.665909,101.617126 243.535553,97.026428   C235.829132,92.064827 227.122330,93.394402 219.583954,101.202995  z"></path>
+                    <path fill="#926041" opacity="1.000000" stroke="none" d=" M105.453354,89.310066   C108.215462,91.449677 110.895309,93.206474 112.880814,95.551231   C113.694260,96.511864 113.007797,98.742577 113.003662,100.395523   C111.438774,99.914764 109.282928,99.922714 108.411255,98.868675   C104.631897,94.298615 99.809410,92.873390 94.567924,94.670784   C92.217484,95.476791 89.593903,98.169380 88.913895,100.530029   C87.912560,104.006172 90.741974,106.407639 94.043945,107.368614   C97.064568,108.247704 100.249374,108.544334 103.318771,109.277840   C111.078354,111.132195 115.361984,116.350296 114.953018,123.282089   C114.568756,129.795090 109.617874,134.775711 102.135635,135.778351   C95.065231,136.725784 88.328621,135.671066 83.366692,130.070755   C82.097878,128.638687 82.396599,125.817802 81.975143,123.634995   C83.876595,124.397469 86.245277,124.684753 87.593246,126.010147   C91.905968,130.250626 97.105545,131.201660 102.336853,129.508484   C104.810844,128.707748 107.476433,125.715317 108.263641,123.163269   C109.344215,119.660133 106.757027,116.731712 103.335762,115.508835   C100.226204,114.397385 96.880501,113.955795 93.651764,113.166321   C89.078064,112.047981 85.352547,109.743866 83.238029,105.356071   C80.805290,100.307915 82.435585,94.427452 87.311150,91.371330   C92.848228,87.900574 98.855927,87.416069 105.453354,89.310066  z"></path>
+                    <path fill="#926142" opacity="1.000000" stroke="none" d=" M148.467911,134.347626   C146.463943,134.278015 144.025421,134.524231 142.969208,133.432755   C139.404297,129.748871 136.330215,125.590034 132.178299,120.527397   C131.175339,122.865318 130.211075,124.376549 129.907974,126.010429   C129.548645,127.947327 130.122543,130.092560 129.597809,131.951523   C129.231888,133.247894 127.698494,134.214722 126.686607,135.328751   C125.692871,134.225800 123.852791,133.136673 123.834518,132.017807   C123.619858,118.871323 123.606277,105.719391 123.788155,92.572327   C123.804451,91.393471 125.552544,90.238564 126.496361,89.072525   C127.582062,90.283875 129.515335,91.435623 129.605438,92.716988   C129.978271,98.019257 129.795074,103.360733 129.812561,108.687820   C129.818359,110.453941 129.813477,112.220100 129.813477,115.354080   C133.316833,112.419853 135.811539,110.366966 138.263657,108.264397   C140.032166,106.747986 141.577408,104.883736 143.544922,103.720322   C144.686432,103.045334 146.466019,103.449409 147.958466,103.367912   C147.738373,104.828804 148.000305,106.681763 147.197556,107.668770   C145.539276,109.707642 143.438797,111.457588 141.293411,113.013718   C137.671112,115.641113 137.226959,118.148819 140.565414,121.448326   C142.918976,123.774406 144.958313,126.467331 146.839783,129.201645   C147.790237,130.582962 148.078873,132.419678 148.467911,134.347626  z"></path>
+                    <path fill="#B2976C" opacity="1.000000" stroke="none" d=" M335.316833,109.843880   C336.199005,111.474655 337.045258,112.752831 337.473389,114.158371   C339.213837,119.871933 337.708740,121.925247 331.825531,121.996025   C328.831055,122.032059 325.798492,122.237526 322.857239,121.830643   C321.556641,121.650719 320.440002,120.140717 319.239868,119.234528   C320.476929,118.190872 321.590363,116.512367 322.978027,116.242149   C325.490479,115.752907 328.166473,116.103539 331.244110,116.103539   C330.076263,111.179924 327.203644,109.403702 323.317902,108.979858   C318.709625,108.477219 314.682007,109.393265 312.388275,114.043533   C310.372681,118.129829 310.284546,122.059875 313.279053,125.710274   C316.447571,129.572784 321.478912,130.362350 326.916779,128.505936   C328.566162,127.942833 330.644104,128.634949 332.525757,128.752151   C331.383820,130.477081 330.638245,132.930923 329.032990,133.803818   C321.060059,138.139328 311.788574,135.172272 307.178436,127.200745   C302.848267,119.713333 304.921051,110.715675 312.156769,105.590599   C319.643982,100.287376 328.962799,101.896286 335.316833,109.843880  z"></path>
+                    <path fill="#B2976C" opacity="1.000000" stroke="none" d=" M362.286987,103.426468   C362.957916,103.679771 363.378052,103.723701 363.551697,103.953728   C365.088806,105.989891 368.299774,109.062210 367.786011,109.941803   C365.750732,113.426514 363.420929,109.682655 361.089600,109.276741   C358.408813,108.809998 355.603333,108.706360 352.895355,108.942406   C351.959991,109.023933 350.510162,110.566391 350.465851,111.497238   C350.418793,112.485764 351.548370,114.062531 352.537964,114.466408   C355.288422,115.588890 358.233307,116.234604 361.100708,117.070900   C366.580994,118.669243 369.762299,122.021355 369.685364,126.113831   C369.600800,130.609421 365.826477,135.161041 360.205627,135.354996   C355.284546,135.524780 350.221710,134.010834 345.391968,132.640030   C344.232483,132.310928 343.748810,129.600632 342.954346,127.985451   C344.837280,127.821861 346.776520,127.293655 348.590912,127.573875   C351.926086,128.088959 355.167053,129.508545 358.489868,129.668930   C359.886749,129.736343 361.391876,127.561073 362.847809,126.405334   C361.649139,125.022331 360.709900,123.089241 359.195770,122.375145   C356.370941,121.042900 353.117218,120.647423 350.215668,119.443573   C346.484802,117.895630 343.600189,115.377983 344.067017,110.799774   C344.522430,106.333466 347.671692,103.967560 351.606842,103.280632   C354.942230,102.698395 358.475983,103.252251 362.286987,103.426468  z"></path>
+                    <path fill="#B2976C" opacity="1.000000" stroke="none" d=" M266.047089,119.713440   C266.066162,115.090782 265.877228,110.913292 266.233612,106.782837   C266.341736,105.529625 267.956573,104.406403 268.881317,103.223640   C269.923553,104.446190 271.725037,105.587799 271.865601,106.906471   C272.286774,110.857445 271.941681,114.882568 272.110199,118.869690   C272.398254,125.685623 275.801544,129.235641 281.727478,129.144745   C287.326935,129.058884 290.623474,125.479645 290.902832,118.918617   C291.072601,114.931610 290.725677,110.906937 291.140320,106.954742   C291.280029,105.623100 293.050140,104.462509 294.075104,103.223740   C295.017090,104.389824 296.713837,105.519875 296.771515,106.728172   C297.032745,112.201767 297.287384,117.748276 296.683136,123.172600   C295.892670,130.268738 288.139221,136.186935 280.991547,135.899872   C272.784637,135.570267 266.619629,129.083389 266.047089,119.713440  z"></path>
+                    <path fill="#B2976D" opacity="1.000000" stroke="none" d=" M385.288147,125.088547   C387.249695,126.776299 389.201782,127.929062 390.868042,129.404633   C391.975037,130.384933 392.673370,131.826721 393.554596,133.061951   C392.116608,133.854080 390.648376,135.370956 389.245850,135.312500   C383.275726,135.063690 378.441315,129.856857 378.222137,123.194756   C377.937866,114.553497 377.969269,105.889923 378.285736,97.251373   C378.345673,95.616096 380.370392,94.052795 381.488495,92.456284   C382.615387,94.046021 384.661377,95.619377 384.690063,97.228706   C384.764526,101.404602 385.191620,104.514061 390.460693,104.330002   C391.089752,104.308022 392.137939,105.818367 392.297913,106.739029   C392.394714,107.296043 391.134857,108.696358 390.518188,108.676422   C383.852386,108.460945 384.837006,113.133499 384.906799,117.220734   C384.949310,119.711456 385.071045,122.200821 385.288147,125.088547  z"></path>
+                    <path fill="#926243" opacity="1.000000" stroke="none" d=" M181.658218,135.267456   C176.233307,133.466202 174.621735,129.314789 174.522614,124.618011   C174.305328,114.322708 174.299988,104.016243 174.576904,93.724258   C174.619370,92.145569 176.624176,90.619659 177.721405,89.069351   C178.746033,90.690529 180.609161,92.287117 180.657532,93.936935   C180.944717,103.730606 180.663086,113.540901 180.945770,123.334839   C181.001968,125.282372 182.487396,127.311249 183.665146,129.066895   C184.698059,130.606613 186.223984,131.815598 187.532135,133.170670   C185.693558,133.897827 183.854965,134.624985 181.658218,135.267456  z"></path>
+                    <path fill="#926244" opacity="1.000000" stroke="none" d=" M192.357208,103.028809   C192.382874,99.371216 192.109146,96.163895 192.565445,93.064049   C192.777176,91.625763 194.409149,90.396530 195.397278,89.072525   C196.516785,90.428490 198.561539,91.754707 198.606247,93.145233   C198.905807,102.461075 198.786942,111.790611 198.787949,121.115700   C198.788361,124.972435 198.285706,128.995819 203.756073,129.910263   C204.503387,130.035156 205.586868,132.065613 205.378265,132.943848   C205.147354,133.915970 203.726471,134.985123 202.620651,135.301163   C198.734406,136.411774 194.104950,133.341034 193.209793,128.415024   C192.385559,123.879227 192.526016,119.157143 192.378967,114.512764   C192.263077,110.852966 192.356232,107.186546 192.357208,103.028809  z"></path>
+                    <path fill="#926142" opacity="1.000000" stroke="none" d=" M164.650024,127.727829   C164.647522,128.520004 164.672226,128.854355 164.640121,129.183167   C164.395615,131.688477 165.290176,135.271347 161.353058,135.209961   C157.481903,135.149612 158.211075,131.605576 158.179733,129.079224   C158.095383,122.278610 158.121140,115.476021 158.169952,108.674690   C158.187561,106.222260 157.897644,102.897644 161.422211,103.331993   C162.703049,103.489838 164.364197,106.865547 164.496506,108.862854   C164.901398,114.974297 164.648178,121.129349 164.650024,127.727829  z"></path>
+                    <path fill="#926041" opacity="1.000000" stroke="none" d=" M163.794998,96.453094   C159.131516,97.509872 156.372147,95.629211 157.821991,92.618614   C158.455994,91.302116 160.992111,89.790039 162.240097,90.096252   C165.541687,90.906342 165.853043,93.435089 163.794998,96.453094  z"></path>
+                    </svg>
+            </div>
+    
+            <div class="info_kort" id="quiz">
+                <div class="fraga" id="fraga-1">
+                    <p>Fråga 1</p>
+                    <div class="fraga-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere finibus velit, quis porttitor leo rutrum eget. </div>
+                    <div>
+                        <form>
+                            <input type="radio" id="Svar1" name="fav_language" value="Svar1">
+                            <label for="Svar1">Svar 1</label><br>
+                            <input type="radio" id="Svar2" name="fav_language" value="Svar2">
+                            <label for="Svar2">Svar 2</label><br>
+                            <input type="radio" id="Svar3" name="fav_language" value="Svar3">
+                            <label for="Svar3">Svar 3</label>
+                        </form>
+                    </div>
+                    <div class="fraga-svar-btn" onclick="fadein('fraga-1',0,0); fadein('fraga-2',1000,1)">Svara</div>
+                </div>
+    
+                <div class="fraga" id="fraga-2">
+                    <p>Fråga 2</p>
+                    <div class="fraga-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere finibus velit, quis porttitor leo rutrum eget. </div>
+                    <div>
+                        <form>
+                            <input type="radio" id="Svar1" name="fav_language" value="Svar1">
+                            <label for="Svar1">Svar 1</label><br>
+                            <input type="radio" id="Svar2" name="fav_language" value="Svar2">
+                            <label for="Svar2">Svar 2</label><br>
+                            <input type="radio" id="Svar3" name="fav_language" value="Svar3">
+                            <label for="Svar3">Svar 3</label>
+                        </form>
+                    </div>
+                    <div class="fraga-svar-btn" onclick="fadein('fraga-2',0,0); fadein('fraga-3',1000,1)">Svara</div>
+                </div>
+    
+                <div class="fraga" id="fraga-3">
+                    <p>Fråga 3</p>
+                    <div class="fraga-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere finibus velit, quis porttitor leo rutrum eget. </div>
+                    <div>
+                        <form>
+                            <input type="radio" id="Svar1" name="fav_language" value="Svar1">
+                            <label for="Svar1">Svar 1</label><br>
+                            <input type="radio" id="Svar2" name="fav_language" value="Svar2">
+                            <label for="Svar2">Svar 2</label><br>
+                            <input type="radio" id="Svar3" name="fav_language" value="Svar3">
+                            <label for="Svar3">Svar 3</label>
+                        </form>
+                    </div>
+                    <div class="fraga-svar-btn" onclick="fadein('fraga-3',0,0); fadein('fraga-4',1000,1)">Svara</div>
+                </div>
+    
+                <div class="fraga" id="fraga-4">
+                    <p>Fråga 4</p>
+                    <div class="fraga-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere finibus velit, quis porttitor leo rutrum eget. </div>
+                    <div>
+                        <form>
+                            <input type="radio" id="Svar1" name="fav_language" value="Svar1">
+                            <label for="Svar1">Svar 1</label><br>
+                            <input type="radio" id="Svar2" name="fav_language" value="Svar2">
+                            <label for="Svar2">Svar 2</label><br>
+                            <input type="radio" id="Svar3" name="fav_language" value="Svar3">
+                            <label for="Svar3">Svar 3</label>
+                        </form>
+                    </div>
+                    <div class="fraga-svar-btn" onclick="fadein('fraga-4',0,0); fadein('fraga-5',1000,1)">Svara</div>
+                </div>
+    
+                <div class="fraga" id="fraga-5">
+                    <p>Fråga 5</p>
+                    <div class="fraga-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere finibus velit, quis porttitor leo rutrum eget. </div>
+                    <div>
+                        <form>
+                            <input type="radio" id="Svar1" name="fav_language" value="Svar1">
+                            <label for="Svar1">Svar 1</label><br>
+                            <input type="radio" id="Svar2" name="fav_language" value="Svar2">
+                            <label for="Svar2">Svar 2</label><br>
+                            <input type="radio" id="Svar3" name="fav_language" value="Svar3">
+                            <label for="Svar3">Svar 3</label>
+                        </form>
+                    </div>
+                    <div class="fraga-svar-btn" onclick="show_window('yrke_forslag','0px','0px');show_window('quiz','2000px','-2000px');">Svara</div>
+                </div>
+            </div>
+    
+            <div class="info_kort" id="yrke_forslag">
+                <p id="forslag">Förslag på yrken</p>
+                <div class="forslag-alt" onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');">Systemutvecklare</div>
+                <div class="forslag-alt">Systemutvecklare</div>
+                <div class="forslag-alt">Systemutvecklare</div>
+                <div class="forslag-alt">Systemutvecklare</div>
+                <div class="forslag-alt">Systemutvecklare</div>
+                <div class="forslag-alt">Systemutvecklare</div>
+                <div class="forslag-alt">Systemutvecklare</div>
+            </div>
+    
+            <div class="info_kort" id="yrke_info">
+                <div id="beskrivning">
+                    <p>Systemutvecklare</p>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a arcu massa. Nam mollis vulputate risus, sit amet lobortis urna auctor nec. Cras hendrerit fermentum ultricies. In eu nulla sed lacus aliquam gravida non a lacus. Nunc venenatis augue et auctor ullamcorper. Donec ullamcorper et leo quis suscipit. Curabitur at efficitur elit. Etiam ultricies pulvinar augue eu rutrum. Ut erat odio, tincidunt sed tempor a, commodo vel orci. Donec congue nunc ac libero convallis, sit amet pellentesque libero tempus. Sed ac enim a eros commodo scelerisque.
+                        <br><br>
+                        Ut elit turpis, egestas ac risus eu, cursus condimentum orci. Aliquam cursus, eros sed rutrum mollis, ligula sem suscipit magna, et iaculis est nunc quis mi. Vestibulum fermentum consequat dolor, ut feugiat ex fermentum vitae. Donec semper imperdiet eros vel tempus. Nunc rutrum consequat vehicula. Vestibulum vel viverra nulla. Nullam ultrices, metus et dapibus hendrerit, nulla mauris placerat est, eget dapibus leo enim sit amet augue. Proin nec metus varius, accumsan tortor scelerisque, malesuada ex. Curabitur varius sollicitudin augue, in placerat libero vestibulum fringilla. Sed ultricies ipsum ligula, in pulvinar diam mattis quis. Donec sem lorem, sagittis et massa id, feugiat placerat libero. Suspendisse sollicitudin vestibulum consequat. Nunc tempor tortor eu orci faucibus, semper elementum velit placerat. Quisque ut nisi eu mi tincidunt porta.
+                        <br><br>
+                        Ut a lorem ornare arcu rutrum bibendum eu et ligula. Etiam rhoncus est at interdum cursus. Pellentesque eleifend auctor consectetur. Donec semper justo non mi bibendum ornare. Sed placerat nisi quis ligula rutrum vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Etiam eu molestie quam. Sed congue libero aliquam sodales pellentesque. Integer pulvinar, orci eu bibendum pretium, lacus lacus vehicula sem, nec hendrerit orci nibh ac mi. Nam felis nunc, imperdiet nec nisi ut, scelerisque tempor nisl. Vestibulum blandit tempor sapien id ornare. Fusce fermentum semper lorem ultricies vulputate.
+                        <br><br>
+                        Donec metus lectus, condimentum quis ipsum nec, consequat efficitur dolor. Aenean nec mauris in nunc feugiat sodales at ac neque. Cras ullamcorper lorem eu interdum pulvinar. Aenean quis tincidunt ex. Nullam lacinia consequat arcu, eget tempor urna semper non. In egestas faucibus orci et aliquet. Vivamus placerat est in magna rhoncus, elementum maximus nisi dignissim. Aliquam ac nisl quis augue ullamcorper congue. Phasellus ornare dictum sem a dapibus. Fusce aliquam nulla ac neque accumsan elementum. Etiam vestibulum lacus ante, sit amet aliquet dolor scelerisque condimentum. Vivamus sit amet condimentum odio. Aenean eu purus augue. Mauris vitae erat eget risus auctor maximus ut sed odio. Vestibulum non tristique diam. Donec quam nisl, euismod et leo vel, ultricies egestas turpis.
+                        <br><br>
+                        Aliquam tempus mattis ligula eget pharetra. Phasellus ultrices suscipit ipsum a hendrerit. Sed ac pellentesque lorem. Morbi feugiat euismod quam vitae porta. Proin lacinia leo vel magna semper, ac lacinia turpis volutpat. Fusce justo magna, molestie sit amet odio non, vulputate varius nisl. Vivamus vehicula urna vel facilisis blandit. Cras viverra velit non luctus sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed in pretium augue, at scelerisque sem. Suspendisse eu mollis orci. Donec lacinia tempor purus nec sagittis. Aenean scelerisque tellus vitae urna malesuada mollis. Nam pulvinar eros id massa sodales, at dictum lorem hendrerit. Sed non odio a nibh faucibus volutpat. In hac habitasse platea dictumst.
+                    </span>
+                </div>
+    
+                <div id="kompetenser">
+                    <p>Kompetenser</p>
+                    <div>
+                        kompitens 1
+                    </div>
+                    <div>
+                        kompitens 2
+                    </div>
+                    <div>
+                        kompitens 3
+                    </div>
+                    <div>
+                        kompitens 4
+                    </div>
+                    <div>
+                        kompitens 5
+                    </div>
+                </div>
+            </div>
+        
+    
+    </body></html>
