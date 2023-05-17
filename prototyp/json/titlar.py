@@ -7,16 +7,16 @@ with open('2022.json', 'r') as file:
     parser = ijson.items(file, 'item')
 
     # Step 3: Extract values from the 'occupation' column
-    column_values = []
+    unique_values = set()
 
     for item in parser:
         # Traverse the nested structure to access 'occupation' value
         if 'occupation_group' in item and 'label' in item['occupation_group']:
-            column_values.append(item['occupation_group']['label'])
+            unique_values.add(item['occupation_group']['label'])
 
-# Print the number of values in the 'occupation' column
-print("Number of values in 'occupation' column:", len(column_values))
+# Print the number of unique values in the 'occupation' column
+print("Number of unique values in 'occupation' column:", len(unique_values))
 
-# Print all the values
-for value in column_values:
+# Print all the unique values
+for value in unique_values:
     print(value)
