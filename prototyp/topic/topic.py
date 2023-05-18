@@ -12,7 +12,7 @@ def main():
     # Specify the maximum number of rows to load
     max_rows = None
     # Define the filtering value
-    jobb_filter = "Systemutvecklare/Programmerare" # jobb_filter ="" kommer att inklusera alla värden
+    jobb_filter = "förskollärare" # jobb_filter ="" kommer att inklusera alla värden
 
 
     # Read CSV file
@@ -20,7 +20,8 @@ def main():
     data = pd.read_csv("job_listings.csv", on_bad_lines='skip', nrows=max_rows)
 
     filtered_data = data[data['occupation.label'].str.contains(jobb_filter, case=False, na=False)]
-
+    print(f"Number of rows after filtering: {len(filtered_data)}")
+    
     # Extract the "description.text" column
     documents = filtered_data["description.text"].tolist()
     
@@ -82,6 +83,13 @@ def main():
     for idx, topic in lda_model.print_topics(-1):
         print(f'Topic: {idx}')
         print(f'Words: {topic}\n')
+
+    # Print the topics and their corresponding word probabilities
+    for idx, topic in lda_model.print_topics(-1):
+        print(f'Topic: {idx}')
+        words = [word.split('"')[1] for word in topic.split('+')]
+        sentence = ' '.join(words)
+        print(f'Words: {sentence}\n')
     
     # Get the keywords for each topic
     topic_keywords = lda_model.show_topics(num_topics=num_topics, num_words=10)
