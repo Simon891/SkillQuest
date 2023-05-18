@@ -20,7 +20,22 @@
         border-radius: 8px;
         transition: all 3s;
     }
-    
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        background-color: #333;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background-color: #555;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #777;
+    }
+        
     .info_kort p{
         font-size: 25px;
     }
@@ -123,9 +138,11 @@
     }
 
     #filter-jobF{
-        width: 100%;
+        width: 90%;
         font-size: 25px;
         margin-bottom: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
         background-color: purple;
         border: none;
         color:white;
@@ -185,408 +202,408 @@
             <div class="info_kort" id="yrke_forslag">
                 <p id="forslag">Förslag på yrken</p>
                 <input id="filter-jobF" />
-                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_advokater">Advokater</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_affärs- och företagsjurister">Affärs- och företagsjurister</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_åklagare">Åklagare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_ambulanssjuksköterskor m.fl.">Ambulanssjuksköterskor m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_ambulanssjukvårdare">Ambulanssjukvårdare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_anestesisjuksköterskor">Anestesisjuksköterskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_anläggningsarbetare">Anläggningsarbetare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_anläggningsdykare">Anläggningsdykare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_anläggningsmaskinförare m.fl.">Anläggningsmaskinförare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_apotekare">Apotekare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_apotekstekniker">Apotekstekniker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_arbetsförmedlare">Arbetsförmedlare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_arbetsledare inom bygg, anläggning och gruva">Arbetsledare inom bygg, anläggning och gruva</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_arbetsledare inom lager och terminal">Arbetsledare inom lager och terminal</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_arbetsledare inom tillverkning">Arbetsledare inom tillverkning</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_arbetsmiljöingenjörer, yrkes- och miljöhygieniker">Arbetsmiljöingenjörer, yrkes- och miljöhygieniker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_arbetsterapeuter">Arbetsterapeuter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_arkeologer och specialister inom humaniora m.m.">Arkeologer och specialister inom humaniora m.m.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_arkitekter m.fl.">Arkitekter m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_arkiv- och biblioteksassistenter m.fl.">Arkiv- och biblioteksassistenter m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_at-läkare">AT-läkare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_audionomer och logopeder">Audionomer och logopeder</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_backofficepersonal m.fl.">Backofficepersonal m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_bagare och konditorer">Bagare och konditorer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_bangårdspersonal">Bangårdspersonal</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_banktjänstemän">Banktjänstemän</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_barnmorskor">Barnmorskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_barnsjuksköterskor">Barnsjuksköterskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_barnskötare">Barnskötare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_barnsköterskor">Barnsköterskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_bärplockare och plantörer m.fl.">Bärplockare och plantörer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_bartendrar">Bartendrar</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_begravnings- och krematoriepersonal">Begravnings- och krematoriepersonal</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_behandlingsassistenter och socialpedagoger m.fl.">Behandlingsassistenter och socialpedagoger m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_bensinstationspersonal">Bensinstationspersonal</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_bergsprängare">Bergsprängare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_betongarbetare">Betongarbetare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_bibliotekarier och arkivarier">Bibliotekarier och arkivarier</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_bild- och sändningstekniker">Bild- och sändningstekniker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_bildkonstnärer m.fl.">Bildkonstnärer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_bilrekonditionerare, fönsterputsare m.fl.">Bilrekonditionerare, fönsterputsare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_biomedicinska analytiker m.fl.">Biomedicinska analytiker m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_biståndsbedömare m.fl.">Biståndsbedömare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_bokbindare m.fl.">Bokbindare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_brandingenjörer och byggnadsinspektörer m.fl.">Brandingenjörer och byggnadsinspektörer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_brandmän">Brandmän</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_brevbärare och postterminalarbetare">Brevbärare och postterminalarbetare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_brunnsborrare m.fl.">Brunnsborrare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_buss- och spårvagnsförare">Buss- och spårvagnsförare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_butikssäljare, dagligvaror">Butikssäljare, dagligvaror</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_butikssäljare, fackhandel">Butikssäljare, fackhandel</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_byggnads- och ventilationsplåtslagare">Byggnads- och ventilationsplåtslagare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_cell- och molekylärbiologer m.fl.">Cell- och molekylärbiologer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_chefer inom äldreomsorg">Chefer inom äldreomsorg</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_chefer inom arkitekt- och ingenjörsverksamhet">Chefer inom arkitekt- och ingenjörsverksamhet</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_chefer inom bank, finans och försäkring">Chefer inom bank, finans och försäkring</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_chefer inom förskoleverksamhet">Chefer inom förskoleverksamhet</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_chefer inom friskvård, sport och fritid">Chefer inom friskvård, sport och fritid</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_chefer inom grund- och gymnasieskola samt vuxenutbildning">Chefer inom grund- och gymnasieskola samt vuxenutbildning</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_chefer inom hälso- och sjukvård">Chefer inom hälso- och sjukvård</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_chefer inom handel">Chefer inom handel</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_chefer inom socialt och kurativt arbete">Chefer inom socialt och kurativt arbete</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_chefer och ledare inom trossamfund">Chefer och ledare inom trossamfund</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_chefssekreterare och vd-assistenter m.fl.">Chefssekreterare och VD-assistenter m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_chefstjänstemän i intresseorganisationer">Chefstjänstemän i intresseorganisationer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_civilingenjörsyrken inom bygg och anläggning">Civilingenjörsyrken inom bygg och anläggning</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_civilingenjörsyrken inom elektroteknik">Civilingenjörsyrken inom elektroteknik</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_civilingenjörsyrken inom gruvteknik och metallurgi">Civilingenjörsyrken inom gruvteknik och metallurgi</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_civilingenjörsyrken inom kemi och kemiteknik">Civilingenjörsyrken inom kemi och kemiteknik</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_civilingenjörsyrken inom logistik och produktionsplanering">Civilingenjörsyrken inom logistik och produktionsplanering</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_civilingenjörsyrken inom maskinteknik">Civilingenjörsyrken inom maskinteknik</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_controller">Controller</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_croupierer och oddssättare m.fl.">Croupierer och oddssättare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_designer inom spel och digitala medier">Designer inom spel och digitala medier</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_diakoner">Diakoner</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_dietister">Dietister</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_distributionselektriker">Distributionselektriker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_distriktssköterskor">Distriktssköterskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_djursjukskötare m.fl.">Djursjukskötare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_doktorander">Doktorander</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_domare">Domare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_domstols- och juristsekreterare m.fl.">Domstols- och juristsekreterare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_driftchefer inom bygg, anläggning och gruva">Driftchefer inom bygg, anläggning och gruva</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_drifttekniker vid värme- och vattenverk">Drifttekniker vid värme- och vattenverk</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_drifttekniker, it">Drifttekniker, IT</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_ekonomi- och finanschefer">Ekonomi- och finanschefer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_ekonomiassistenter m.fl.">Ekonomiassistenter m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_elektronikreparatörer och kommunikationselektriker m.fl.">Elektronikreparatörer och kommunikationselektriker m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_elevassistenter m.fl.">Elevassistenter m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_evenemangs- och reseproducenter m.fl.">Evenemangs- och reseproducenter m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_eventsäljare och butiksdemonstratörer m.fl.">Eventsäljare och butiksdemonstratörer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_farmakologer och biomedicinare">Farmakologer och biomedicinare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fartygsbefäl m.fl.">Fartygsbefäl m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fastighets- och förvaltningschefer">Fastighets- och förvaltningschefer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fastighetsförvaltare">Fastighetsförvaltare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fastighetsmäklare">Fastighetsmäklare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fastighetsskötare">Fastighetsskötare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fin-, inrednings- och möbelsnickare">Fin-, inrednings- och möbelsnickare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_finansanalytiker och investeringsrådgivare m.fl.">Finansanalytiker och investeringsrådgivare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_finmekaniker">Finmekaniker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fiskare">Fiskare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fiskodlare">Fiskodlare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_flygledare">Flygledare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_flygmekaniker m.fl.">Flygmekaniker m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_flygtekniker">Flygtekniker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_förare av jordbruks- och skogsmaskiner">Förare av jordbruks- och skogsmaskiner</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fordonsmontörer">Fordonsmontörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_företagssäljare">Företagssäljare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_företagssköterskor">Företagssköterskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_författare m.fl.">Författare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_försäkringssäljare och försäkringsrådgivare">Försäkringssäljare och försäkringsrådgivare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_försäljnings- och marknadschefer">Försäljnings- och marknadschefer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_forskarassistenter m.fl.">Forskarassistenter m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_forsknings- och utvecklingschefer">Forsknings- och utvecklingschefer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_förskollärare">Förskollärare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_förvaltare inom skogsbruk och lantbruk m.fl.">Förvaltare inom skogsbruk och lantbruk m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_förvaltnings- och organisationsjurister">Förvaltnings- och organisationsjurister</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_förvaltnings- och planeringschefer">Förvaltnings- och planeringschefer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fotografer">Fotografer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fotterapeuter">Fotterapeuter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_friskvårdskonsulenter och hälsopedagoger m.fl.">Friskvårdskonsulenter och hälsopedagoger m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_frisörer">Frisörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fritidsledare m.fl.">Fritidsledare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fritidspedagoger">Fritidspedagoger</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fysiker och astronomer">Fysiker och astronomer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_fysioterapeuter och sjukgymnaster">Fysioterapeuter och sjukgymnaster</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_general-, landstings- och kommundirektörer m.fl.">General-, landstings- och kommundirektörer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_geologer och geofysiker m.fl.">Geologer och geofysiker m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_geriatriksjuksköterskor">Geriatriksjuksköterskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_gis- och kartingenjörer">GIS- och kartingenjörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_gjutare">Gjutare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_glastekniker">Glastekniker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_golvläggare">Golvläggare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_grafisk formgivare m.fl.">Grafisk formgivare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_grovarbetare inom bygg och anläggning">Grovarbetare inom bygg och anläggning</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_grundskollärare">Grundskollärare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_grundutbildade sjuksköterskor">Grundutbildade sjuksköterskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_gruppledare för kontorspersonal">Gruppledare för kontorspersonal</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_gruv- och stenbrottsarbetare">Gruv- och stenbrottsarbetare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_guider och reseledare">Guider och reseledare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_guld- och silversmeder">Guld- och silversmeder</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_gymnasielärare">Gymnasielärare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_hamnarbetare">Hamnarbetare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_handpaketerare och andra fabriksarbetare">Handpaketerare och andra fabriksarbetare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_hotell- och konferenschefer">Hotell- och konferenschefer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_hotellreceptionister m.fl.">Hotellreceptionister m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_hovmästare och servitörer">Hovmästare och servitörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_hudterapeuter">Hudterapeuter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_idrottstränare och instruktörer m.fl.">Idrottstränare och instruktörer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_industridesigner">Industridesigner</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_industrielektriker">Industrielektriker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_informations-, kommunikations- och pr-chefer">Informations-, kommunikations- och PR-chefer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_informatörer, kommunikatörer och pr-specialister">Informatörer, kommunikatörer och PR-specialister</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_ingenjörer och tekniker inom bygg och anläggning">Ingenjörer och tekniker inom bygg och anläggning</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_ingenjörer och tekniker inom elektroteknik">Ingenjörer och tekniker inom elektroteknik</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_ingenjörer och tekniker inom gruvteknik och metallurgi">Ingenjörer och tekniker inom gruvteknik och metallurgi</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_ingenjörer och tekniker inom industri, logistik och produktionsplanering">Ingenjörer och tekniker inom industri, logistik och produktionsplanering</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_ingenjörer och tekniker inom kemi och kemiteknik">Ingenjörer och tekniker inom kemi och kemiteknik</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_ingenjörer och tekniker inom maskinteknik">Ingenjörer och tekniker inom maskinteknik</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_inkasserare och pantlånare m.fl.">Inkasserare och pantlånare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_inköpare och upphandlare">Inköpare och upphandlare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_inköps- och orderassistenter">Inköps- och orderassistenter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_inköps-, logistik- och transportchefer">Inköps-, logistik- och transportchefer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_inredare, dekoratörer och scenografer m.fl.">Inredare, dekoratörer och scenografer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_inspicienter och scriptor m.fl.">Inspicienter och scriptor m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_installations- och serviceelektriker">Installations- och serviceelektriker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_intensivvårdssjuksköterskor">Intensivvårdssjuksköterskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_isoleringsmontörer">Isoleringsmontörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_it-chefer">IT-chefer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_it-säkerhetsspecialister">IT-säkerhetsspecialister</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_journalister m.fl.">Journalister m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_kabinpersonal m.fl.">Kabinpersonal m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_kafé- och konditoribiträden">Kafé- och konditoribiträden</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_kassapersonal m.fl.">Kassapersonal m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_kemister">Kemister</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_kiropraktorer och naprapater m.fl.">Kiropraktorer och naprapater m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_kockar och kallskänkor">Kockar och kallskänkor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_köksmästare och souschefer">Köksmästare och souschefer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_kontorsreceptionister">Kontorsreceptionister</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_koreografer och dansare">Koreografer och dansare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_kranförare m.fl.">Kranförare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_kriminalvårdare">Kriminalvårdare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_kundtjänstpersonal">Kundtjänstpersonal</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_kuratorer">Kuratorer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_kyl- och värmepumpstekniker m.fl.">Kyl- och värmepumpstekniker m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_laboratorieingenjörer">Laboratorieingenjörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_lackerare och industrimålare">Lackerare och industrimålare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_läderhantverkare och skomakare">Läderhantverkare och skomakare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_lager- och terminalpersonal">Lager- och terminalpersonal</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_landskapsarkitekter">Landskapsarkitekter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_lantmätare">Lantmätare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_lärare i yrkesämnen">Lärare i yrkesämnen</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_lastbilsförare m.fl.">Lastbilsförare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_lednings- och organisationsutvecklare">Lednings- och organisationsutvecklare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_ljus-, ljud- och scentekniker">Ljus-, ljud- och scentekniker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_lokförare">Lokförare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_löne- och personaladministratörer">Löne- och personaladministratörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_mäklare inom finans">Mäklare inom finans</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_målare">Målare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_manuella ytbehandlare, trä">Manuella ytbehandlare, trä</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_marknads- och försäljningsassistenter">Marknads- och försäljningsassistenter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_marknadsanalytiker och marknadsförare m.fl.">Marknadsanalytiker och marknadsförare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_marknadsundersökare och intervjuare">Marknadsundersökare och intervjuare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinbefäl">Maskinbefäl</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinoperatörer inom ytbehandling, trä">Maskinoperatörer inom ytbehandling, trä</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinoperatörer, blekning, färgning och tvättning">Maskinoperatörer, blekning, färgning och tvättning</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinoperatörer, cement-, sten- och betongvaror">Maskinoperatörer, cement-, sten- och betongvaror</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinoperatörer, farmaceutiska produkter">Maskinoperatörer, farmaceutiska produkter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinoperatörer, gummiindustri">Maskinoperatörer, gummiindustri</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinoperatörer, kemisktekniska och fotografiska produkter">Maskinoperatörer, kemisktekniska och fotografiska produkter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinoperatörer, kött- och fiskberedningsindustri">Maskinoperatörer, kött- och fiskberedningsindustri</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinoperatörer, kvarn-, bageri- och konfektyrindustri">Maskinoperatörer, kvarn-, bageri- och konfektyrindustri</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinoperatörer, mejeri">Maskinoperatörer, mejeri</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinoperatörer, påfyllning, packning och märkning">Maskinoperatörer, påfyllning, packning och märkning</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinoperatörer, pappersvaruindustri">Maskinoperatörer, pappersvaruindustri</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinoperatörer, plastindustri">Maskinoperatörer, plastindustri</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinoperatörer, ytbehandling">Maskinoperatörer, ytbehandling</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinsnickare och maskinoperatörer, träindustri">Maskinsnickare och maskinoperatörer, träindustri</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_maskinställare och maskinoperatörer, metallarbete">Maskinställare och maskinoperatörer, metallarbete</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_massörer och massageterapeuter">Massörer och massageterapeuter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_matematiker och aktuarier">Matematiker och aktuarier</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_matroser och jungmän m.fl.">Matroser och jungmän m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_medicinska sekreterare, vårdadministratörer m fl">Medicinska sekreterare, vårdadministratörer m fl</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_medicinska sekreterare, vårdadministratörer m.fl.">Medicinska sekreterare, vårdadministratörer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_meteorologer">Meteorologer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_miljö- och hälsoskyddsinspektörer">Miljö- och hälsoskyddsinspektörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_mjukvaru- och systemutvecklare m.fl.">Mjukvaru- och systemutvecklare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_montörer, elektrisk och elektronisk utrustning">Montörer, elektrisk och elektronisk utrustning</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_montörer, metall-, gummi- och plastprodukter">Montörer, metall-, gummi- och plastprodukter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_montörer, träprodukter">Montörer, träprodukter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_motorfordonsmekaniker och fordonsreparatörer">Motorfordonsmekaniker och fordonsreparatörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_murare m.fl.">Murare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_museiintendenter m.fl.">Museiintendenter m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_musiker, sångare och kompositörer">Musiker, sångare och kompositörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_musikinstrumentmakare och övriga konsthantverkare">Musikinstrumentmakare och övriga konsthantverkare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_nationalekonomer och makroanalytiker m.fl.">Nationalekonomer och makroanalytiker m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_nätverks- och systemtekniker m.fl.">Nätverks- och systemtekniker m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_odlare av jordbruksväxter, frukt och bär">Odlare av jordbruksväxter, frukt och bär</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_officerare">Officerare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_operationssjuksköterskor">Operationssjuksköterskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_operatörer inom sågverk, hyvleri och plywood m.m.">Operatörer inom sågverk, hyvleri och plywood m.m.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_optiker">Optiker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_optikerassistenter">Optikerassistenter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_ordersamordnare m.fl.">Ordersamordnare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_översättare, tolkar och lingvister m.fl.">Översättare, tolkar och lingvister m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övrig bevaknings- och säkerhetspersonal">Övrig bevaknings- och säkerhetspersonal</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övrig hemservicepersonal m.fl.">Övrig hemservicepersonal m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övrig servicepersonal">Övrig servicepersonal</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övrig vård- och omsorgspersonal">Övrig vård- och omsorgspersonal</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga administrations- och servicechefer">Övriga administrations- och servicechefer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga bil-, motorcykel- och cykelförare">Övriga bil-, motorcykel- och cykelförare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga byggnads- och anläggningsarbetare">Övriga byggnads- och anläggningsarbetare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga chefer inom övrig servicenäring">Övriga chefer inom övrig servicenäring</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga chefer inom samhällsservice">Övriga chefer inom samhällsservice</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga chefer inom utbildning">Övriga chefer inom utbildning</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga civilingenjörsyrken">Övriga civilingenjörsyrken</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga designer och formgivare">Övriga designer och formgivare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga djuruppfödare och djurskötare">Övriga djuruppfödare och djurskötare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga drifttekniker och processövervakare">Övriga drifttekniker och processövervakare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga ekonomer">Övriga ekonomer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga förmedlare">Övriga förmedlare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga handläggare">Övriga handläggare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga ingenjörer och tekniker">Övriga ingenjörer och tekniker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga it-specialister">Övriga IT-specialister</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga jurister">Övriga jurister</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga kontorsassistenter och sekreterare">Övriga kontorsassistenter och sekreterare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga läkare">Övriga läkare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga maskin- och processoperatörer vid stål- och metallverk">Övriga maskin- och processoperatörer vid stål- och metallverk</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga maskinoperatörer, livsmedelsindustri m.m.">Övriga maskinoperatörer, livsmedelsindustri m.m.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga maskinoperatörer, textil-, skinn- och läderindustri">Övriga maskinoperatörer, textil-, skinn- och läderindustri</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga montörer">Övriga montörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga pedagoger med teoretisk specialistkompetens">Övriga pedagoger med teoretisk specialistkompetens</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga process- och maskinoperatörer">Övriga process- och maskinoperatörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga servicearbetare">Övriga servicearbetare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga skönhets- och kroppsterapeuter">Övriga skönhets- och kroppsterapeuter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga specialister inom hälso- och sjukvård">Övriga specialister inom hälso- och sjukvård</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga specialistsjuksköterskor">Övriga specialistsjuksköterskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga universitets- och högskollärare">Övriga universitets- och högskollärare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga utbildare och instruktörer">Övriga utbildare och instruktörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga yrken inom kultur och underhållning">Övriga yrken inom kultur och underhållning</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_övriga yrken inom socialt arbete">Övriga yrken inom socialt arbete</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_pastorer m.fl.">Pastorer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_personal- och hr-chefer">Personal- och HR-chefer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_personal- och hr-specialister">Personal- och HR-specialister</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_personliga assistenter">Personliga assistenter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_piloter m.fl.">Piloter m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_pizzabagare m.fl.">Pizzabagare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_planerare och utredare m.fl.">Planerare och utredare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_planeringsarkitekter m.fl.">Planeringsarkitekter m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_poliser">Poliser</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_politiker">Politiker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_präster">Präster</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_prepresstekniker">Prepresstekniker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_processoperatörer, papper">Processoperatörer, papper</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_processoperatörer, pappersmassa">Processoperatörer, pappersmassa</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_processoperatörer, stenkross- och malmförädling">Processoperatörer, stenkross- och malmförädling</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_processövervakare, kemisk industri">Processövervakare, kemisk industri</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_processövervakare, metallproduktion">Processövervakare, metallproduktion</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_produktionschefer inom tillverkning">Produktionschefer inom tillverkning</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_professionella idrottsutövare">Professionella idrottsutövare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_professorer">Professorer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_provsmakare och kvalitetsbedömare">Provsmakare och kvalitetsbedömare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_psykiatrisjuksköterskor">Psykiatrisjuksköterskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_psykologer">Psykologer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_psykoterapeuter">Psykoterapeuter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_ramppersonal, flyttkarlar och varupåfyllare m.fl.">Ramppersonal, flyttkarlar och varupåfyllare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_receptarier">Receptarier</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_redovisningsekonomer">Redovisningsekonomer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_regissörer och producenter av film, teater m.m.">Regissörer och producenter av film, teater m.m.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_reklamutdelare och tidningsdistributörer">Reklamutdelare och tidningsdistributörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_renhållnings- och återvinningsarbetare">Renhållnings- och återvinningsarbetare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_resesäljare och trafikassistenter m.fl.">Resesäljare och trafikassistenter m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_restaurang- och köksbiträden m.fl.">Restaurang- och köksbiträden m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_restaurang- och kökschefer">Restaurang- och kökschefer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_revisorer m.fl.">Revisorer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_röntgensjuksköterskor">Röntgensjuksköterskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_säkerhetsinspektörer m.fl.">Säkerhetsinspektörer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_säljande butikschefer och avdelningschefer i butik">Säljande butikschefer och avdelningschefer i butik</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_saneringsarbetare m.fl.">Saneringsarbetare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_skadereglerare och värderare">Skadereglerare och värderare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_skådespelare">Skådespelare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_skattehandläggare">Skattehandläggare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_skogsarbetare">Skogsarbetare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_skolassistenter m.fl.">Skolassistenter m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_skolsköterskor">Skolsköterskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_skorstensfejare">Skorstensfejare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_skötare">Skötare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_skräddare och ateljésömmerskor m.fl.">Skräddare och ateljésömmerskor m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_slaktare och styckare m.fl.">Slaktare och styckare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_slipare m.fl.">Slipare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_smeder">Smeder</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_socialförsäkringshandläggare">Socialförsäkringshandläggare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_socialsekreterare">Socialsekreterare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_soldater m.fl.">Soldater m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_sömmare">Sömmare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_sos-operatörer m.fl.">SOS-operatörer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_specialister inom miljöskydd och miljöteknik">Specialister inom miljöskydd och miljöteknik</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_specialister och rådgivare inom lantbruk m.m.">Specialister och rådgivare inom lantbruk m.m.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_specialister och rådgivare inom skogsbruk">Specialister och rådgivare inom skogsbruk</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_specialistläkare">Specialistläkare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_specialistofficerare">Specialistofficerare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_speciallärare och specialpedagoger m.fl.">Speciallärare och specialpedagoger m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_speditörer och transportmäklare">Speditörer och transportmäklare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_städare">Städare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_städledare och husfruar">Städledare och husfruar</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_stålkonstruktionsmontörer och grovplåtsslagare">Stålkonstruktionsmontörer och grovplåtsslagare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_ställningsbyggare">Ställningsbyggare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_statistiker">Statistiker</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_stenhuggare m.fl.">Stenhuggare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_st-läkare">ST-läkare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_storhushållsföreståndare">Storhushållsföreståndare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_studie- och yrkesvägledare">Studie- och yrkesvägledare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_supporttekniker, it">Supporttekniker, IT</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_svetsare och gasskärare">Svetsare och gasskärare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_systemadministratörer">Systemadministratörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_systemanalytiker och it-arkitekter m.fl.">Systemanalytiker och IT-arkitekter m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_systemförvaltare m.fl.">Systemförvaltare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_systemtestare och testledare">Systemtestare och testledare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_tågvärdar och ombordansvariga m.fl.">Tågvärdar och ombordansvariga m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_takmontörer">Takmontörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_tandhygienister">Tandhygienister</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_tandläkare">Tandläkare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_tandsköterskor">Tandsköterskor</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_tandtekniker och ortopedingenjörer m.fl.">Tandtekniker och ortopedingenjörer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_tapetserare">Tapetserare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_taxiförare m.fl.">Taxiförare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_tekniker, bilddiagnostik och medicinteknisk utrustning">Tekniker, bilddiagnostik och medicinteknisk utrustning</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_telefonförsäljare m.fl.">Telefonförsäljare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_telefonister">Telefonister</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_terapeuter inom alternativmedicin">Terapeuter inom alternativmedicin</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_torg- och marknadsförsäljare m.fl.">Torg- och marknadsförsäljare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_träarbetare, snickare m.fl.">Träarbetare, snickare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_traders och fondförvaltare">Traders och fondförvaltare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_trädgårdsanläggare m.fl.">Trädgårdsanläggare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_trädgårdsodlare">Trädgårdsodlare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_trafiklärare">Trafiklärare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_transportledare och transportsamordnare">Transportledare och transportsamordnare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_truckförare">Truckförare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_tryckare">Tryckare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_tull- och kustbevakningstjänstemän">Tull- och kustbevakningstjänstemän</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_tunnplåtslagare">Tunnplåtslagare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_underhållsmekaniker och maskinreparatörer">Underhållsmekaniker och maskinreparatörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_undersköterskor, hemtjänst, hemsjukvård, äldreboende och habilitering">Undersköterskor, hemtjänst, hemsjukvård, äldreboende och habilitering</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_undersköterskor, vård- och specialavdelning och mottagning">Undersköterskor, vård- och specialavdelning och mottagning</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_universitets- och högskolelektorer">Universitets- och högskolelektorer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_uppfödare och skötare av lantbrukets husdjur">Uppfödare och skötare av lantbrukets husdjur</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_uppfödare och skötare av sällskapsdjur">Uppfödare och skötare av sällskapsdjur</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_uthyrare">Uthyrare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_utvecklare inom spel och digitala media">Utvecklare inom spel och digitala media</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_väktare och ordningsvakter">Väktare och ordningsvakter</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_vaktmästare m.fl.">Vaktmästare m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_valsverksoperatörer">Valsverksoperatörer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_vårdare, boendestödjare">Vårdare, boendestödjare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_vårdbiträden">Vårdbiträden</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_växt- och djurbiologer">Växt- och djurbiologer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_växtodlare och djuruppfödare, blandad drift">Växtodlare och djuruppfödare, blandad drift</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_verkställande direktörer m.fl.">Verkställande direktörer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_verktygsmakare">Verktygsmakare</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_veterinärer">Veterinärer</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_vvs-montörer m.fl.">VVS-montörer m.fl.</div>
-<div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forslag-alt_webbmaster och webbadministratörer">Webbmaster och webbadministratörer</div>
-                               
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="advokater">Advokater</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="affärs_och_företagsjurister">Affärs- och företagsjurister</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="åklagare">Åklagare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="ambulanssjuksköterskor_mfl">Ambulanssjuksköterskor m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="ambulanssjukvårdare">Ambulanssjukvårdare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="anestesisjuksköterskor">Anestesisjuksköterskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="anläggningsarbetare">Anläggningsarbetare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="anläggningsdykare">Anläggningsdykare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="anläggningsmaskinförare_mfl">Anläggningsmaskinförare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="apotekare">Apotekare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="apotekstekniker">Apotekstekniker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="arbetsförmedlare">Arbetsförmedlare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="arbetsledare_inom_bygg_anläggning_och_gruva">Arbetsledare inom bygg, anläggning och gruva</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="arbetsledare_inom_lager_och_terminal">Arbetsledare inom lager och terminal</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="arbetsledare_inom_tillverkning">Arbetsledare inom tillverkning</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="arbetsmiljöingenjörer_yrkes_och_miljöhygieniker">Arbetsmiljöingenjörer, yrkes- och miljöhygieniker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="arbetsterapeuter">Arbetsterapeuter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="arkeologer_och_specialister_inom_humaniora_mm">Arkeologer och specialister inom humaniora m.m.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="arkitekter_mfl">Arkitekter m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="arkiv_och_biblioteksassistenter_mfl">Arkiv- och biblioteksassistenter m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="atläkare">AT-läkare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="audionomer_och_logopeder">Audionomer och logopeder</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="backofficepersonal_mfl">Backofficepersonal m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="bagare_och_konditorer">Bagare och konditorer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="bangårdspersonal">Bangårdspersonal</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="banktjänstemän">Banktjänstemän</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="barnmorskor">Barnmorskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="barnsjuksköterskor">Barnsjuksköterskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="barnskötare">Barnskötare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="barnsköterskor">Barnsköterskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="bärplockare_och_plantörer_mfl">Bärplockare och plantörer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="bartendrar">Bartendrar</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="begravnings_och_krematoriepersonal">Begravnings- och krematoriepersonal</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="behandlingsassistenter_och_socialpedagoger_mfl">Behandlingsassistenter och socialpedagoger m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="bensinstationspersonal">Bensinstationspersonal</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="bergsprängare">Bergsprängare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="betongarbetare">Betongarbetare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="bibliotekarier_och_arkivarier">Bibliotekarier och arkivarier</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="bild_och_sändningstekniker">Bild- och sändningstekniker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="bildkonstnärer_mfl">Bildkonstnärer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="bilrekonditionerare_fönsterputsare_mfl">Bilrekonditionerare, fönsterputsare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="biomedicinska_analytiker_mfl">Biomedicinska analytiker m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="biståndsbedömare_mfl">Biståndsbedömare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="bokbindare_mfl">Bokbindare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="brandingenjörer_och_byggnadsinspektörer_mfl">Brandingenjörer och byggnadsinspektörer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="brandmän">Brandmän</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="brevbärare_och_postterminalarbetare">Brevbärare och postterminalarbetare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="brunnsborrare_mfl">Brunnsborrare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="buss_och_spårvagnsförare">Buss- och spårvagnsförare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="butikssäljare_dagligvaror">Butikssäljare, dagligvaror</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="butikssäljare_fackhandel">Butikssäljare, fackhandel</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="byggnads_och_ventilationsplåtslagare">Byggnads- och ventilationsplåtslagare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="cell_och_molekylärbiologer_mfl">Cell- och molekylärbiologer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="chefer_inom_äldreomsorg">Chefer inom äldreomsorg</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="chefer_inom_arkitekt_och_ingenjörsverksamhet">Chefer inom arkitekt- och ingenjörsverksamhet</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="chefer_inom_bank_finans_och_försäkring">Chefer inom bank, finans och försäkring</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="chefer_inom_förskoleverksamhet">Chefer inom förskoleverksamhet</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="chefer_inom_friskvård_sport_och_fritid">Chefer inom friskvård, sport och fritid</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="chefer_inom_grund_och_gymnasieskola_samt_vuxenutbildning">Chefer inom grund- och gymnasieskola samt vuxenutbildning</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="chefer_inom_hälso_och_sjukvård">Chefer inom hälso- och sjukvård</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="chefer_inom_handel">Chefer inom handel</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="chefer_inom_socialt_och_kurativt_arbete">Chefer inom socialt och kurativt arbete</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="chefer_och_ledare_inom_trossamfund">Chefer och ledare inom trossamfund</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="chefssekreterare_och_vdassistenter_mfl">Chefssekreterare och VD-assistenter m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="chefstjänstemän_i_intresseorganisationer">Chefstjänstemän i intresseorganisationer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="civilingenjörsyrken_inom_bygg_och_anläggning">Civilingenjörsyrken inom bygg och anläggning</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="civilingenjörsyrken_inom_elektroteknik">Civilingenjörsyrken inom elektroteknik</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="civilingenjörsyrken_inom_gruvteknik_och_metallurgi">Civilingenjörsyrken inom gruvteknik och metallurgi</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="civilingenjörsyrken_inom_kemi_och_kemiteknik">Civilingenjörsyrken inom kemi och kemiteknik</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="civilingenjörsyrken_inom_logistik_och_produktionsplanering">Civilingenjörsyrken inom logistik och produktionsplanering</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="civilingenjörsyrken_inom_maskinteknik">Civilingenjörsyrken inom maskinteknik</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="controller">Controller</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="croupierer_och_oddssättare_mfl">Croupierer och oddssättare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="designer_inom_spel_och_digitala_medier">Designer inom spel och digitala medier</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="diakoner">Diakoner</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="dietister">Dietister</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="distributionselektriker">Distributionselektriker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="distriktssköterskor">Distriktssköterskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="djursjukskötare_mfl">Djursjukskötare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="doktorander">Doktorander</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="domare">Domare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="domstols_och_juristsekreterare_mfl">Domstols- och juristsekreterare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="driftchefer_inom_bygg_anläggning_och_gruva">Driftchefer inom bygg, anläggning och gruva</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="drifttekniker_vid_värme_och_vattenverk">Drifttekniker vid värme- och vattenverk</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="drifttekniker_it">Drifttekniker, IT</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="ekonomi_och_finanschefer">Ekonomi- och finanschefer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="ekonomiassistenter_mfl">Ekonomiassistenter m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="elektronikreparatörer_och_kommunikationselektriker_mfl">Elektronikreparatörer och kommunikationselektriker m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="elevassistenter_mfl">Elevassistenter m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="evenemangs_och_reseproducenter_mfl">Evenemangs- och reseproducenter m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="eventsäljare_och_butiksdemonstratörer_mfl">Eventsäljare och butiksdemonstratörer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="farmakologer_och_biomedicinare">Farmakologer och biomedicinare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fartygsbefäl_mfl">Fartygsbefäl m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fastighets_och_förvaltningschefer">Fastighets- och förvaltningschefer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fastighetsförvaltare">Fastighetsförvaltare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fastighetsmäklare">Fastighetsmäklare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fastighetsskötare">Fastighetsskötare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fin_inrednings_och_möbelsnickare">Fin-, inrednings- och möbelsnickare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="finansanalytiker_och_investeringsrådgivare_mfl">Finansanalytiker och investeringsrådgivare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="finmekaniker">Finmekaniker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fiskare">Fiskare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fiskodlare">Fiskodlare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="flygledare">Flygledare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="flygmekaniker_mfl">Flygmekaniker m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="flygtekniker">Flygtekniker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="förare_av_jordbruks_och_skogsmaskiner">Förare av jordbruks- och skogsmaskiner</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fordonsmontörer">Fordonsmontörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="företagssäljare">Företagssäljare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="företagssköterskor">Företagssköterskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="författare_mfl">Författare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="försäkringssäljare_och_försäkringsrådgivare">Försäkringssäljare och försäkringsrådgivare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="försäljnings_och_marknadschefer">Försäljnings- och marknadschefer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forskarassistenter_mfl">Forskarassistenter m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="forsknings_och_utvecklingschefer">Forsknings- och utvecklingschefer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="förskollärare">Förskollärare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="förvaltare_inom_skogsbruk_och_lantbruk_mfl">Förvaltare inom skogsbruk och lantbruk m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="förvaltnings_och_organisationsjurister">Förvaltnings- och organisationsjurister</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="förvaltnings_och_planeringschefer">Förvaltnings- och planeringschefer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fotografer">Fotografer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fotterapeuter">Fotterapeuter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="friskvårdskonsulenter_och_hälsopedagoger_mfl">Friskvårdskonsulenter och hälsopedagoger m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="frisörer">Frisörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fritidsledare_mfl">Fritidsledare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fritidspedagoger">Fritidspedagoger</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fysiker_och_astronomer">Fysiker och astronomer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="fysioterapeuter_och_sjukgymnaster">Fysioterapeuter och sjukgymnaster</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="general_landstings_och_kommundirektörer_mfl">General-, landstings- och kommundirektörer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="geologer_och_geofysiker_mfl">Geologer och geofysiker m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="geriatriksjuksköterskor">Geriatriksjuksköterskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="gis_och_kartingenjörer">GIS- och kartingenjörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="gjutare">Gjutare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="glastekniker">Glastekniker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="golvläggare">Golvläggare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="grafisk_formgivare_mfl">Grafisk formgivare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="grovarbetare_inom_bygg_och_anläggning">Grovarbetare inom bygg och anläggning</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="grundskollärare">Grundskollärare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="grundutbildade_sjuksköterskor">Grundutbildade sjuksköterskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="gruppledare_för_kontorspersonal">Gruppledare för kontorspersonal</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="gruv_och_stenbrottsarbetare">Gruv- och stenbrottsarbetare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="guider_och_reseledare">Guider och reseledare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="guld_och_silversmeder">Guld- och silversmeder</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="gymnasielärare">Gymnasielärare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="hamnarbetare">Hamnarbetare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="handpaketerare_och_andra_fabriksarbetare">Handpaketerare och andra fabriksarbetare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="hotell_och_konferenschefer">Hotell- och konferenschefer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="hotellreceptionister_mfl">Hotellreceptionister m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="hovmästare_och_servitörer">Hovmästare och servitörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="hudterapeuter">Hudterapeuter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="idrottstränare_och_instruktörer_mfl">Idrottstränare och instruktörer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="industridesigner">Industridesigner</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="industrielektriker">Industrielektriker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="informations_kommunikations_och_prchefer">Informations-, kommunikations- och PR-chefer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="informatörer_kommunikatörer_och_prspecialister">Informatörer, kommunikatörer och PR-specialister</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="ingenjörer_och_tekniker_inom_bygg_och_anläggning">Ingenjörer och tekniker inom bygg och anläggning</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="ingenjörer_och_tekniker_inom_elektroteknik">Ingenjörer och tekniker inom elektroteknik</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="ingenjörer_och_tekniker_inom_gruvteknik_och_metallurgi">Ingenjörer och tekniker inom gruvteknik och metallurgi</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="ingenjörer_och_tekniker_inom_industri_logistik_och_produktionsplanering">Ingenjörer och tekniker inom industri, logistik och produktionsplanering</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="ingenjörer_och_tekniker_inom_kemi_och_kemiteknik">Ingenjörer och tekniker inom kemi och kemiteknik</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="ingenjörer_och_tekniker_inom_maskinteknik">Ingenjörer och tekniker inom maskinteknik</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="inkasserare_och_pantlånare_mfl">Inkasserare och pantlånare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="inköpare_och_upphandlare">Inköpare och upphandlare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="inköps_och_orderassistenter">Inköps- och orderassistenter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="inköps_logistik_och_transportchefer">Inköps-, logistik- och transportchefer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="inredare_dekoratörer_och_scenografer_mfl">Inredare, dekoratörer och scenografer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="inspicienter_och_scriptor_mfl">Inspicienter och scriptor m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="installations_och_serviceelektriker">Installations- och serviceelektriker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="intensivvårdssjuksköterskor">Intensivvårdssjuksköterskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="isoleringsmontörer">Isoleringsmontörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="itchefer">IT-chefer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="itsäkerhetsspecialister">IT-säkerhetsspecialister</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="journalister_mfl">Journalister m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="kabinpersonal_mfl">Kabinpersonal m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="kafé_och_konditoribiträden">Kafé- och konditoribiträden</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="kassapersonal_mfl">Kassapersonal m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="kemister">Kemister</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="kiropraktorer_och_naprapater_mfl">Kiropraktorer och naprapater m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="kockar_och_kallskänkor">Kockar och kallskänkor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="köksmästare_och_souschefer">Köksmästare och souschefer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="kontorsreceptionister">Kontorsreceptionister</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="koreografer_och_dansare">Koreografer och dansare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="kranförare_mfl">Kranförare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="kriminalvårdare">Kriminalvårdare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="kundtjänstpersonal">Kundtjänstpersonal</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="kuratorer">Kuratorer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="kyl_och_värmepumpstekniker_mfl">Kyl- och värmepumpstekniker m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="laboratorieingenjörer">Laboratorieingenjörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="lackerare_och_industrimålare">Lackerare och industrimålare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="läderhantverkare_och_skomakare">Läderhantverkare och skomakare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="lager_och_terminalpersonal">Lager- och terminalpersonal</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="landskapsarkitekter">Landskapsarkitekter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="lantmätare">Lantmätare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="lärare_i_yrkesämnen">Lärare i yrkesämnen</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="lastbilsförare_mfl">Lastbilsförare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="lednings_och_organisationsutvecklare">Lednings- och organisationsutvecklare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="ljus_ljud_och_scentekniker">Ljus-, ljud- och scentekniker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="lokförare">Lokförare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="löne_och_personaladministratörer">Löne- och personaladministratörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="mäklare_inom_finans">Mäklare inom finans</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="målare">Målare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="manuella_ytbehandlare_trä">Manuella ytbehandlare, trä</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="marknads_och_försäljningsassistenter">Marknads- och försäljningsassistenter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="marknadsanalytiker_och_marknadsförare_mfl">Marknadsanalytiker och marknadsförare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="marknadsundersökare_och_intervjuare">Marknadsundersökare och intervjuare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinbefäl">Maskinbefäl</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinoperatörer_inom_ytbehandling_trä">Maskinoperatörer inom ytbehandling, trä</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinoperatörer_blekning_färgning_och_tvättning">Maskinoperatörer, blekning, färgning och tvättning</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinoperatörer_cement_sten_och_betongvaror">Maskinoperatörer, cement-, sten- och betongvaror</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinoperatörer_farmaceutiska_produkter">Maskinoperatörer, farmaceutiska produkter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinoperatörer_gummiindustri">Maskinoperatörer, gummiindustri</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinoperatörer_kemisktekniska_och_fotografiska_produkter">Maskinoperatörer, kemisktekniska och fotografiska produkter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinoperatörer_kött_och_fiskberedningsindustri">Maskinoperatörer, kött- och fiskberedningsindustri</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinoperatörer_kvarn_bageri_och_konfektyrindustri">Maskinoperatörer, kvarn-, bageri- och konfektyrindustri</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinoperatörer_mejeri">Maskinoperatörer, mejeri</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinoperatörer_påfyllning_packning_och_märkning">Maskinoperatörer, påfyllning, packning och märkning</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinoperatörer_pappersvaruindustri">Maskinoperatörer, pappersvaruindustri</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinoperatörer_plastindustri">Maskinoperatörer, plastindustri</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinoperatörer_ytbehandling">Maskinoperatörer, ytbehandling</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinsnickare_och_maskinoperatörer_träindustri">Maskinsnickare och maskinoperatörer, träindustri</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="maskinställare_och_maskinoperatörer_metallarbete">Maskinställare och maskinoperatörer, metallarbete</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="massörer_och_massageterapeuter">Massörer och massageterapeuter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="matematiker_och_aktuarier">Matematiker och aktuarier</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="matroser_och_jungmän_mfl">Matroser och jungmän m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="medicinska_sekreterare_vårdadministratörer_m_fl">Medicinska sekreterare, vårdadministratörer m fl</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="medicinska_sekreterare_vårdadministratörer_mfl">Medicinska sekreterare, vårdadministratörer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="meteorologer">Meteorologer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="miljö_och_hälsoskyddsinspektörer">Miljö- och hälsoskyddsinspektörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="mjukvaru_och_systemutvecklare_mfl">Mjukvaru- och systemutvecklare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="montörer_elektrisk_och_elektronisk_utrustning">Montörer, elektrisk och elektronisk utrustning</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="montörer_metall_gummi_och_plastprodukter">Montörer, metall-, gummi- och plastprodukter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="montörer_träprodukter">Montörer, träprodukter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="motorfordonsmekaniker_och_fordonsreparatörer">Motorfordonsmekaniker och fordonsreparatörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="murare_mfl">Murare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="museiintendenter_mfl">Museiintendenter m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="musiker_sångare_och_kompositörer">Musiker, sångare och kompositörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="musikinstrumentmakare_och_övriga_konsthantverkare">Musikinstrumentmakare och övriga konsthantverkare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="nationalekonomer_och_makroanalytiker_mfl">Nationalekonomer och makroanalytiker m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="nätverks_och_systemtekniker_mfl">Nätverks- och systemtekniker m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="odlare_av_jordbruksväxter_frukt_och_bär">Odlare av jordbruksväxter, frukt och bär</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="officerare">Officerare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="operationssjuksköterskor">Operationssjuksköterskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="operatörer_inom_sågverk_hyvleri_och_plywood_mm">Operatörer inom sågverk, hyvleri och plywood m.m.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="optiker">Optiker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="optikerassistenter">Optikerassistenter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="ordersamordnare_mfl">Ordersamordnare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="översättare_tolkar_och_lingvister_mfl">Översättare, tolkar och lingvister m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övrig_bevaknings_och_säkerhetspersonal">Övrig bevaknings- och säkerhetspersonal</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övrig_hemservicepersonal_mfl">Övrig hemservicepersonal m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övrig_servicepersonal">Övrig servicepersonal</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övrig_vård_och_omsorgspersonal">Övrig vård- och omsorgspersonal</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_administrations_och_servicechefer">Övriga administrations- och servicechefer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_bil_motorcykel_och_cykelförare">Övriga bil-, motorcykel- och cykelförare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_byggnads_och_anläggningsarbetare">Övriga byggnads- och anläggningsarbetare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_chefer_inom_övrig_servicenäring">Övriga chefer inom övrig servicenäring</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_chefer_inom_samhällsservice">Övriga chefer inom samhällsservice</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_chefer_inom_utbildning">Övriga chefer inom utbildning</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_civilingenjörsyrken">Övriga civilingenjörsyrken</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_designer_och_formgivare">Övriga designer och formgivare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_djuruppfödare_och_djurskötare">Övriga djuruppfödare och djurskötare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_drifttekniker_och_processövervakare">Övriga drifttekniker och processövervakare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_ekonomer">Övriga ekonomer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_förmedlare">Övriga förmedlare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_handläggare">Övriga handläggare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_ingenjörer_och_tekniker">Övriga ingenjörer och tekniker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_itspecialister">Övriga IT-specialister</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_jurister">Övriga jurister</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_kontorsassistenter_och_sekreterare">Övriga kontorsassistenter och sekreterare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_läkare">Övriga läkare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_maskin_och_processoperatörer_vid_stål_och_metallverk">Övriga maskin- och processoperatörer vid stål- och metallverk</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_maskinoperatörer_livsmedelsindustri_mm">Övriga maskinoperatörer, livsmedelsindustri m.m.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_maskinoperatörer_textil_skinn_och_läderindustri">Övriga maskinoperatörer, textil-, skinn- och läderindustri</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_montörer">Övriga montörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_pedagoger_med_teoretisk_specialistkompetens">Övriga pedagoger med teoretisk specialistkompetens</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_process_och_maskinoperatörer">Övriga process- och maskinoperatörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_servicearbetare">Övriga servicearbetare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_skönhets_och_kroppsterapeuter">Övriga skönhets- och kroppsterapeuter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_specialister_inom_hälso_och_sjukvård">Övriga specialister inom hälso- och sjukvård</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_specialistsjuksköterskor">Övriga specialistsjuksköterskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_universitets_och_högskollärare">Övriga universitets- och högskollärare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_utbildare_och_instruktörer">Övriga utbildare och instruktörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_yrken_inom_kultur_och_underhållning">Övriga yrken inom kultur och underhållning</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="övriga_yrken_inom_socialt_arbete">Övriga yrken inom socialt arbete</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="pastorer_mfl">Pastorer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="personal_och_hrchefer">Personal- och HR-chefer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="personal_och_hrspecialister">Personal- och HR-specialister</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="personliga_assistenter">Personliga assistenter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="piloter_mfl">Piloter m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="pizzabagare_mfl">Pizzabagare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="planerare_och_utredare_mfl">Planerare och utredare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="planeringsarkitekter_mfl">Planeringsarkitekter m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="poliser">Poliser</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="politiker">Politiker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="präster">Präster</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="prepresstekniker">Prepresstekniker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="processoperatörer_papper">Processoperatörer, papper</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="processoperatörer_pappersmassa">Processoperatörer, pappersmassa</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="processoperatörer_stenkross_och_malmförädling">Processoperatörer, stenkross- och malmförädling</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="processövervakare_kemisk_industri">Processövervakare, kemisk industri</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="processövervakare_metallproduktion">Processövervakare, metallproduktion</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="produktionschefer_inom_tillverkning">Produktionschefer inom tillverkning</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="professionella_idrottsutövare">Professionella idrottsutövare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="professorer">Professorer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="provsmakare_och_kvalitetsbedömare">Provsmakare och kvalitetsbedömare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="psykiatrisjuksköterskor">Psykiatrisjuksköterskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="psykologer">Psykologer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="psykoterapeuter">Psykoterapeuter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="ramppersonal_flyttkarlar_och_varupåfyllare_mfl">Ramppersonal, flyttkarlar och varupåfyllare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="receptarier">Receptarier</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="redovisningsekonomer">Redovisningsekonomer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="regissörer_och_producenter_av_film_teater_mm">Regissörer och producenter av film, teater m.m.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="reklamutdelare_och_tidningsdistributörer">Reklamutdelare och tidningsdistributörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="renhållnings_och_återvinningsarbetare">Renhållnings- och återvinningsarbetare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="resesäljare_och_trafikassistenter_mfl">Resesäljare och trafikassistenter m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="restaurang_och_köksbiträden_mfl">Restaurang- och köksbiträden m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="restaurang_och_kökschefer">Restaurang- och kökschefer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="revisorer_mfl">Revisorer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="röntgensjuksköterskor">Röntgensjuksköterskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="säkerhetsinspektörer_mfl">Säkerhetsinspektörer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="säljande_butikschefer_och_avdelningschefer_i_butik">Säljande butikschefer och avdelningschefer i butik</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="saneringsarbetare_mfl">Saneringsarbetare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="skadereglerare_och_värderare">Skadereglerare och värderare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="skådespelare">Skådespelare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="skattehandläggare">Skattehandläggare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="skogsarbetare">Skogsarbetare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="skolassistenter_mfl">Skolassistenter m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="skolsköterskor">Skolsköterskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="skorstensfejare">Skorstensfejare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="skötare">Skötare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="skräddare_och_ateljésömmerskor_mfl">Skräddare och ateljésömmerskor m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="slaktare_och_styckare_mfl">Slaktare och styckare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="slipare_mfl">Slipare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="smeder">Smeder</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="socialförsäkringshandläggare">Socialförsäkringshandläggare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="socialsekreterare">Socialsekreterare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="soldater_mfl">Soldater m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="sömmare">Sömmare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="sosoperatörer_mfl">SOS-operatörer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="specialister_inom_miljöskydd_och_miljöteknik">Specialister inom miljöskydd och miljöteknik</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="specialister_och_rådgivare_inom_lantbruk_mm">Specialister och rådgivare inom lantbruk m.m.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="specialister_och_rådgivare_inom_skogsbruk">Specialister och rådgivare inom skogsbruk</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="specialistläkare">Specialistläkare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="specialistofficerare">Specialistofficerare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="speciallärare_och_specialpedagoger_mfl">Speciallärare och specialpedagoger m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="speditörer_och_transportmäklare">Speditörer och transportmäklare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="städare">Städare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="städledare_och_husfruar">Städledare och husfruar</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="stålkonstruktionsmontörer_och_grovplåtsslagare">Stålkonstruktionsmontörer och grovplåtsslagare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="ställningsbyggare">Ställningsbyggare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="statistiker">Statistiker</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="stenhuggare_mfl">Stenhuggare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="stläkare">ST-läkare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="storhushållsföreståndare">Storhushållsföreståndare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="studie_och_yrkesvägledare">Studie- och yrkesvägledare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="supporttekniker_it">Supporttekniker, IT</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="svetsare_och_gasskärare">Svetsare och gasskärare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="systemadministratörer">Systemadministratörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="systemanalytiker_och_itarkitekter_mfl">Systemanalytiker och IT-arkitekter m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="systemförvaltare_mfl">Systemförvaltare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="systemtestare_och_testledare">Systemtestare och testledare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="tågvärdar_och_ombordansvariga_mfl">Tågvärdar och ombordansvariga m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="takmontörer">Takmontörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="tandhygienister">Tandhygienister</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="tandläkare">Tandläkare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="tandsköterskor">Tandsköterskor</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="tandtekniker_och_ortopedingenjörer_mfl">Tandtekniker och ortopedingenjörer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="tapetserare">Tapetserare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="taxiförare_mfl">Taxiförare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="tekniker_bilddiagnostik_och_medicinteknisk_utrustning">Tekniker, bilddiagnostik och medicinteknisk utrustning</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="telefonförsäljare_mfl">Telefonförsäljare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="telefonister">Telefonister</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="terapeuter_inom_alternativmedicin">Terapeuter inom alternativmedicin</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="torg_och_marknadsförsäljare_mfl">Torg- och marknadsförsäljare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="träarbetare_snickare_mfl">Träarbetare, snickare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="traders_och_fondförvaltare">Traders och fondförvaltare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="trädgårdsanläggare_mfl">Trädgårdsanläggare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="trädgårdsodlare">Trädgårdsodlare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="trafiklärare">Trafiklärare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="transportledare_och_transportsamordnare">Transportledare och transportsamordnare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="truckförare">Truckförare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="tryckare">Tryckare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="tull_och_kustbevakningstjänstemän">Tull- och kustbevakningstjänstemän</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="tunnplåtslagare">Tunnplåtslagare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="underhållsmekaniker_och_maskinreparatörer">Underhållsmekaniker och maskinreparatörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="undersköterskor_hemtjänst_hemsjukvård_äldreboende_och_habilitering">Undersköterskor, hemtjänst, hemsjukvård, äldreboende och habilitering</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="undersköterskor_vård_och_specialavdelning_och_mottagning">Undersköterskor, vård- och specialavdelning och mottagning</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="universitets_och_högskolelektorer">Universitets- och högskolelektorer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="uppfödare_och_skötare_av_lantbrukets_husdjur">Uppfödare och skötare av lantbrukets husdjur</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="uppfödare_och_skötare_av_sällskapsdjur">Uppfödare och skötare av sällskapsdjur</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="uthyrare">Uthyrare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="utvecklare_inom_spel_och_digitala_media">Utvecklare inom spel och digitala media</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="väktare_och_ordningsvakter">Väktare och ordningsvakter</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="vaktmästare_mfl">Vaktmästare m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="valsverksoperatörer">Valsverksoperatörer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="vårdare_boendestödjare">Vårdare, boendestödjare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="vårdbiträden">Vårdbiträden</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="växt_och_djurbiologer">Växt- och djurbiologer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="växtodlare_och_djuruppfödare_blandad_drift">Växtodlare och djuruppfödare, blandad drift</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="verkställande_direktörer_mfl">Verkställande direktörer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="verktygsmakare">Verktygsmakare</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="veterinärer">Veterinärer</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="vvsmontörer_mfl">VVS-montörer m.fl.</div>
+                <div onclick="show_window('yrke_info','0px','0px');show_window('yrke_forslag','2000px','-2000px');" class="forslag-alt " id="webbmaster_och_webbadministratörer">Webbmaster och webbadministratörer</div>
+                              
             </div>
     
             <div class="info_kort" id="yrke_info">
@@ -636,7 +653,7 @@
         function filter() {
             $('.forslag-alt').css('display', 'none');
             var disp = document.getElementById("filter-jobF").value;
-            var disp2 = '[id*="' + disp + '"] + .forslag-alt';
+            var disp2 = '[id*="' + disp + '"][class~="forslag-alt"]';
             $(disp2).css('display', 'block');
         }
     </script>
