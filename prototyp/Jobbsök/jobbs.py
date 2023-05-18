@@ -38,12 +38,18 @@ while True:
     # Calculate document similarities
     sims = index[query_tfidf]
 
-    # Get the index of the best match
-    best_match_index = sims.argmax()
+    # Get the indices of the top 10 matches (in descending order)
+    top_10_indices = sims.argsort()[::-1][:10]
 
-    # Retrieve the best matching document and its corresponding occupation
-    best_match_document = documents[best_match_index]
-    best_match_occupation = occupations[best_match_index]
+    # Retrieve the top 10 matching documents and their corresponding occupations
+    top_10_documents = [documents[i] for i in top_10_indices]
+    unique_occupations = []
+    for i in top_10_indices:
+        occupation = occupations[i]
+        if occupation not in unique_occupations:
+            unique_occupations.append(occupation)
 
-    # Display the best matching occupation label
-    print(f"Best matching occupation: {best_match_occupation}")
+    # Display the top 10 matching occupation labels
+    print("Top 10 matching occupations:")
+    for occupation in unique_occupations:
+        print(f"Occupation: {occupation}")
