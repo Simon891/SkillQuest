@@ -1,0 +1,2 @@
+Topic modeling visualization – How to present the results of LDA models?
+https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/#6.-What-is-the-Dominant-topic-and-its-percentage-contribution-in-each-document
