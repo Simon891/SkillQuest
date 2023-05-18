@@ -3,7 +3,7 @@ import pandas as pd
 from gensim import corpora, models, similarities
 
 # Read the CSV file into a pandas DataFrame
-max_rows = 5000
+max_rows = None
 data = pd.read_csv("job_listings.csv", on_bad_lines='skip', nrows=max_rows)
 
 # Extract the "description.text" and "occupation.label" columns from the DataFrame
@@ -16,17 +16,25 @@ tokenized_docs = [nltk.word_tokenize(doc.lower()) for doc in documents]
 # Create a dictionary from the tokenized documents
 dictionary = corpora.Dictionary(tokenized_docs)
 
-# Create a TF-IDF representation of the documents
+# Create a corpus
 corpus = [dictionary.doc2bow(doc) for doc in tokenized_docs]
+
+# Train the TF-IDF model on the corpus
 tfidf = models.TfidfModel(corpus)
 corpus_tfidf = tfidf[corpus]
 
 # Build an index
 index = similarities.SparseMatrixSimilarity(corpus_tfidf, num_features=len(dictionary))
 
+# Save the trained TF-IDF model
+tfidf.save("tfidf_model")
+
+# Save the index
+index.save("tfidf_index")
+
 while True:
-    # Define an input word/query
-    query = input()
+    # Define input words/queries
+    query = input("Enter multiple words separated by spaces: ")
 
     # Preprocess the query
     tokenized_query = nltk.word_tokenize(query.lower())
