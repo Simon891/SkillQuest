@@ -1,0 +1,8 @@
+<form action="{{ url_for('process_input') }}" method="POST">
+    <input type="text" name="input_value" placeholder="Enter a value" value="{{ input_value }}" required>
+    <button type="submit">Submit</button>
+  </form>
+  
+  {% if modified_value %}
+    <p>The modified value is: {{ modified_value }}</p>
+  {% endif %}
