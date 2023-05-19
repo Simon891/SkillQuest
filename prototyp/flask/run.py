@@ -1,8 +1,8 @@
-from flask import Flask, render_template, request
+import os
 import nltk
 import pandas as pd
 from gensim import corpora, models, similarities
-from flask import Flask, render_template, request, Markup
+from flask import Flask, render_template, request, Markup, jsonify, flash, redirect, url_for
 
 def hitta_job(documents, occupations, dictionary, tfidf, index_obj, sokord):
     # Define input words/queries
@@ -19,24 +19,27 @@ def hitta_job(documents, occupations, dictionary, tfidf, index_obj, sokord):
     sims = index_obj[query_tfidf]
 
     # Get the indices of the top 10 matches (in descending order)
-    top_10_indices = sims.argsort()[::-1][:10]
+    match_indices = sims.argsort()[::-1][:20]
 
     # Retrieve the top 10 matching documents and their corresponding occupations
-    top_10_documents = [documents[i] for i in top_10_indices]
+    top_10_documents = [documents[i] for i in match_indices]
     unique_occupations = []
-    for i in top_10_indices:
+    for i in match_indices:
         occupation = occupations[i]
         if occupation not in unique_occupations:
             unique_occupations.append(occupation)
 
     # Return the top 10 matching occupation labels as a string with line breaks
-    result_string = "Top 10 matching occupations:<br>"
-    result_string += "<br>".join(f"Occupation: {occupation}<br>" for occupation in unique_occupations)
+    result_string = ""
+    result_string += "\n".join(f"<div class='forslag'>{occupation}</div>" for occupation in unique_occupations)
+
     
     return result_string
 
 
 app = Flask(__name__)
+app.secret_key = os.urandom(24)  # Replace with your desired secret key
+
 
 # Read the CSV file into a pandas DataFrame
 max_rows = 100
@@ -72,7 +75,16 @@ def index():
 def process_input():
     input_value = request.form.get('input_value')
     modified_value = hitta_job(documents, occupations, dictionary, tfidf, index_obj, input_value)
+    flash('yay')
     return render_template('index.html', input_value=input_value, modified_value=Markup(modified_value))
+
+@app.route('/send_selected', methods=['POST'])
+def send_selected():
+    selected_html = request.json['selected_html']
+    # Do something with the selected HTML
+    # ...
+    flash('Selected HTML received successfully.')
+    return jsonify({'message': 'Selected HTML received.'})
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,0 +1,83 @@
+body{
+    background-color: #252526;
+    font-family: 'Lato';
+    font-weight: 300;
+    src: url('path-to-lato/Lato-Thin.ttf') format('truetype');
+}
+
+input{
+    font-family: 'Lato';
+    font-weight: 300;
+    src: url('path-to-lato/Lato-Thin.ttf') format('truetype');
+    width:100%;
+    font-size: 25px;
+    margin-bottom:10px;
+    left:0px;
+    right: 0px;
+    background-color: #64DE9E;
+    border: none;
+    color: #1e1e1e;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+.forslag{
+    text-align: center;
+    color:white;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.forslag:hover{
+    color:magenta;
+    cursor: pointer;
+}
+
+#logga{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#jobb_forslag{
+    color:red;
+}
+
+#forslag_ruta{
+    color: white;
+    position: absolute;
+    height: 510px;
+    width: 300px;
+    margin:auto;
+    left:0px;
+    right:0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    transition: all 3s;
+    overflow: hidden;
+}
+
+#resultat{
+    overflow-y: scroll;
+    height: 100%;
+}
+
+#resultat::-webkit-scrollbar{
+    display: none;
+  }
+
+#mes{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    color: red;
+}
