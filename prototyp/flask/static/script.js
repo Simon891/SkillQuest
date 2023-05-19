@@ -6,6 +6,8 @@ function updateInfoDiv(html) {
   
   // Send selected HTML back to Flask
   function sendSelectedHTML(selectedHTML) {
+    document.getElementById("laddar").style.display="block";
+    document.getElementById("laddar_img").style.display="block";
     fetch('/send_selected', {
       method: 'POST',
       headers: {
@@ -17,6 +19,10 @@ function updateInfoDiv(html) {
       .then(data => {
         console.log(data.selected_html);
         updateInfoDiv(data.selected_html);
+        document.getElementById("laddar").style.display="none";
+        document.getElementById("laddar_img").style.display="none";
+        document.getElementById("info").style.display="block";
+        document.getElementById("info").style.opacity=1;
       })
       .catch(error => {
         console.error('Error:', error);

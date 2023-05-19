@@ -83,10 +83,39 @@ input:focus {
 }
 
 #info{
-    height: 100px;
-    width: 50%;
+    opacity: 0;
+    display: none;
+    height: 900px;
+    width: 1200px;
     position: fixed;
+    margin: auto;
+    top: 0px;
     bottom: 0px;
     right: 0px;
-    color: red;    
+    left: 0px;
+    color: red; 
+    background-color: #1e1e1e;
+    transition: all 3s;   
+}
+
+#laddar{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: white;
+    left:0px;
+    top: 0px;
+    font-size: 30px;
+    opacity: 0.5;
+}
+#laddar_img{
+    display: none;
+    position: fixed;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 1;
 }

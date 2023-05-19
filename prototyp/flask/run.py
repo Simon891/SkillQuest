@@ -3,6 +3,7 @@ import nltk
 import pandas as pd
 from gensim import corpora, models, similarities
 from flask import Flask, render_template, request, Markup, jsonify, flash, redirect, url_for
+import topicM
 
 def hitta_job(documents, occupations, dictionary, tfidf, index_obj, sokord):
     # Define input words/queries
@@ -81,10 +82,9 @@ def process_input():
 @app.route('/send_selected', methods=['POST'])
 def send_selected():
     selected_html = request.json['selected_html']
-    # Do something with the selected HTML
-    # ...
+    reur_html = topicM.main(selected_html)
     flash('Selected HTML received successfully.')
-    return jsonify({'selected_html': selected_html})
+    return jsonify({'selected_html': reur_html})
 
 if __name__ == '__main__':
     app.run(debug=True)
