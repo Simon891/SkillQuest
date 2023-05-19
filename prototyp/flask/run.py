@@ -84,7 +84,7 @@ def send_selected():
     # Do something with the selected HTML
     # ...
     flash('Selected HTML received successfully.')
-    return jsonify({'message': 'Selected HTML received.'})
+    return jsonify({'selected_html': selected_html})
 
 if __name__ == '__main__':
     app.run(debug=True)

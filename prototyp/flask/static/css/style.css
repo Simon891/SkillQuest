@@ -81,3 +81,12 @@ input:focus {
     left: 0px;
     color: red;
 }
+
+#info{
+    height: 100px;
+    width: 50%;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    color: red;    
+}

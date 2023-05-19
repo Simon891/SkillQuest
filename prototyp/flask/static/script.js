@@ -1,7 +1,11 @@
-// Send selected HTML back to Flask
-function sendSelectedHTML(selectedHTML) {
-    console.log('Selected HTML:', selectedHTML); // Log the selected HTML to the console
-    
+// Update inner HTML of div with ID "info"
+function updateInfoDiv(html) {
+    const infoDiv = document.getElementById('info');
+    infoDiv.innerHTML = html;
+  }
+  
+  // Send selected HTML back to Flask
+  function sendSelectedHTML(selectedHTML) {
     fetch('/send_selected', {
       method: 'POST',
       headers: {
@@ -11,16 +15,16 @@ function sendSelectedHTML(selectedHTML) {
     })
       .then(response => response.json())
       .then(data => {
-        console.log(data.message); // Log the response data to the console
+        console.log(data.selected_html);
+        updateInfoDiv(data.selected_html);
       })
       .catch(error => {
-        console.error('Error:', error); // Log any errors to the console
+        console.error('Error:', error);
       });
   }
   
-
+  // Attach click event listener to suggestion divs
   document.addEventListener('DOMContentLoaded', function() {
-    // Attach click event listener to suggestion divs
     const suggestionDivs = document.getElementsByClassName('forslag');
     Array.from(suggestionDivs).forEach(div => {
       div.addEventListener('click', function() {
