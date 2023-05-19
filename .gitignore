@@ -1,2 +1,5 @@
 prototyp/json/2022.json
 prototyp/Jobbsök/job_listings.csv
+prototyp/flask/dataset/job_listings.csv
+.gitignore
+prototyp/flask/jobbsok/job_listings.csv
