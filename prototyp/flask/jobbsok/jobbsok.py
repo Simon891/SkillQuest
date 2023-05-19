@@ -2,27 +2,7 @@ import nltk
 import pandas as pd
 from gensim import corpora, models, similarities
 
-# Read the CSV file into a pandas DataFrame
-max_rows = None
-data = pd.read_csv("job_listings.csv", on_bad_lines='skip', nrows=max_rows)
-
-# Extract the "description.text" and "occupation.label" columns from the DataFrame
-documents = data['description.text'].tolist()
-occupations = data['occupation.label'].tolist()
-
-# Tokenize the documents
-tokenized_docs = [nltk.word_tokenize(doc.lower()) for doc in documents]
-
-# Create a dictionary from the tokenized documents
-dictionary = corpora.Dictionary(tokenized_docs)
-
-# Load the saved TF-IDF model
-tfidf = models.TfidfModel.load("tfidf_model")
-
-# Build an index
-index = similarities.SparseMatrixSimilarity.load("tfidf_index")
-
-while True:
+def hitta_job():
     # Define input words/queries
     query = input("Enter multiple words separated by spaces: ")
 
@@ -51,3 +31,30 @@ while True:
     print("Top 10 matching occupations:")
     for occupation in unique_occupations:
         print(f"Occupation: {occupation}")
+
+
+# Read the CSV file into a pandas DataFrame
+max_rows = 100
+data = pd.read_csv("job_listings.csv", on_bad_lines='skip', nrows=max_rows)
+
+# Extract the "description.text" and "occupation.label" columns from the DataFrame
+documents = data['description.text'].tolist()
+occupations = data['occupation.label'].tolist()
+
+# Tokenize the documents
+tokenized_docs = [nltk.word_tokenize(doc.lower()) for doc in documents]
+
+# Create a dictionary from the tokenized documents
+dictionary = corpora.Dictionary(tokenized_docs)
+
+# Create a corpus
+corpus = [dictionary.doc2bow(doc) for doc in tokenized_docs]
+
+# Train the TF-IDF model on the corpus
+tfidf = models.TfidfModel(corpus)
+corpus_tfidf = tfidf[corpus]
+
+# Build an index
+index = similarities.SparseMatrixSimilarity(corpus_tfidf, num_features=len(dictionary))
+
+hitta_job()
