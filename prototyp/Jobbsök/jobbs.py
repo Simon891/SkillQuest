@@ -3,7 +3,7 @@ import pandas as pd
 from gensim import corpora, models, similarities
 
 # Read the CSV file into a pandas DataFrame
-max_rows = None
+max_rows = 10000
 data = pd.read_csv("job_listings.csv", on_bad_lines='skip', nrows=max_rows)
 
 # Extract the "description.text" and "occupation.label" columns from the DataFrame
