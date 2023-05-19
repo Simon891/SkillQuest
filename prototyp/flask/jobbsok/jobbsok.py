@@ -2,9 +2,9 @@ import nltk
 import pandas as pd
 from gensim import corpora, models, similarities
 
-def hitta_job():
+def hitta_job(documents, occupations, dictionary, tfidf, index, sokord):
     # Define input words/queries
-    query = input("Enter multiple words separated by spaces: ")
+    query = sokord
 
     # Preprocess the query
     tokenized_query = nltk.word_tokenize(query.lower())
@@ -57,4 +57,5 @@ corpus_tfidf = tfidf[corpus]
 # Build an index
 index = similarities.SparseMatrixSimilarity(corpus_tfidf, num_features=len(dictionary))
 
-hitta_job()
+# Call the function with the required arguments
+hitta_job(documents, occupations, dictionary, tfidf, index, "bil")
