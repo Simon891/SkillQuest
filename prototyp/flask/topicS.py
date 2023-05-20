@@ -12,7 +12,7 @@ def main(yrke):
 
     def summarize_text(sentences):
         # Read custom stopwords from a text file
-        with open('custom_stopwords.txt', 'r', encoding='utf-8') as file:
+        with open('stopwords.txt', 'r', encoding='utf-8') as file:
             custom_stopwords = file.read().splitlines()
 
         # Remove stopwords
@@ -44,7 +44,7 @@ def main(yrke):
 
 
     # Read the CSV file
-    df = pd.read_csv('job_listings.csv')
+    df = pd.read_csv('dataset/job_listings.csv')
 
     # Filter based on the value of "occupation.label"
     filtered_df = df[df['occupation.label'] == yrke]
@@ -65,6 +65,10 @@ def main(yrke):
     for i, sentence in enumerate(summary, 1):
         print(f"{i}. {sentence.strip()}")  # Strip any leading/trailing spaces from the sentence
 
+    retur = '<br>'.join([f"{i}. {sentence.strip()}" for i, sentence in enumerate(summary, 1)])
+
+
+    return retur
 
 if __name__ == '__main__':
     main()
