@@ -1,0 +1,166 @@
+body{
+    background-color: #252526;
+    font-family: 'Lato';
+    font-weight: 300;
+    src: url('path-to-lato/Lato-Thin.ttf') format('truetype');
+}
+
+input{
+    font-family: 'Lato';
+    font-weight: 300;
+    src: url('path-to-lato/Lato-Thin.ttf') format('truetype');
+    width:100%;
+    font-size: 25px;
+    margin-bottom:10px;
+    left:0px;
+    right: 0px;
+    background-color: #64DE9E;
+    border: none;
+    color: #1e1e1e;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+.forslag{
+    text-align: center;
+    color:white;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.forslag:hover{
+    color:magenta;
+    cursor: pointer;
+}
+
+.topic{
+    margin-top: 10px;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .fade.show {
+    opacity: 1;
+    }
+
+#logga{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#jobb_forslag{
+    color:red;
+}
+
+#forslag_ruta {
+    color: white;
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    transition: height 1s;
+    overflow: hidden;
+    opacity: 1;
+  }
+  
+
+#resultat{
+    overflow-y: scroll;
+    height: 100%;
+}
+
+#resultat::-webkit-scrollbar{
+    display: none;
+  }
+
+#mes{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    color: red;
+}
+
+#info{
+    display: none;
+    /*height: 900px;*/
+    width: 850px;
+    position: fixed;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    color: white;
+    font-size: 25px;
+    background-color: #1e1e1e;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: opacity 1s;
+}
+
+#laddar{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #1e1e1e;
+    left:0px;
+    top: 0px;
+    font-size: 30px;
+    opacity: 0.8;
+}
+
+#laddar_img{
+    display: none;
+    position: fixed;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.5;
+}
+
+#info_banner{
+    width: 100%;
+    text-align: center;
+    background-color: #64DE9E;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #1e1e1e;
+    margin-bottom: 5px;
+}
+
+#info_text{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#info_stang{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #1e1e1e;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+#info_stang:hover{
+    background-color: red;
+}
