@@ -7,3 +7,7 @@ prototyp/jobbsok - backup/job_listings.csv
 prototyp/flask/tokenized.pkl
 prototyp/flask/__pycache__/topicM.cpython-311.pyc
 prototyp/flask/__pycache__/topicS.cpython-311.pyc
+prototyp Final/__pycache__/title_finder.cpython-311.pyc
+prototyp Final/__pycache__/topicM.cpython-311.pyc
+prototyp Final/__pycache__/topicS.cpython-311.pyc
+prototyp Final/dataset/job_listings.csv
