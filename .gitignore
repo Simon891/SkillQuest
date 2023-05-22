@@ -3,3 +3,7 @@ prototyp/Jobbsök/job_listings.csv
 prototyp/flask/dataset/job_listings.csv
 .gitignore
 prototyp/flask/jobbsok/job_listings.csv
+prototyp/jobbsok - backup/job_listings.csv
+prototyp/flask/tokenized.pkl
+prototyp/flask/__pycache__/topicM.cpython-311.pyc
+prototyp/flask/__pycache__/topicS.cpython-311.pyc

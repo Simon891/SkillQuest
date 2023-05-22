@@ -3,6 +3,8 @@ import nltk
 import pandas as pd
 from gensim import corpora, models, similarities
 from flask import Flask, render_template, request, Markup, jsonify, flash, redirect, url_for
+import pickle
+import time
 import topicS
 
 def hitta_job(documents, occupations, dictionary, tfidf, index_obj, sokord):
@@ -43,28 +45,62 @@ app.secret_key = os.urandom(24)  # Replace with your desired secret key
 
 
 # Read the CSV file into a pandas DataFrame
-max_rows = 100
+print("Read the CSV file into a pandas DataFrame")
+start_time_ladda_data = time.time()
+max_rows = None
 data = pd.read_csv("dataset/job_listings.csv", on_bad_lines='skip', nrows=max_rows)
 
 # Extract the "description.text" and "occupation.label" columns from the DataFrame
+print("Extract the 'description.text' and 'occupation.label' columns from the DataFrame")
 documents = data['description.text'].tolist()
 occupations = data['occupation.label'].tolist()
 
-# Tokenize the documents
-tokenized_docs = [nltk.word_tokenize(doc.lower()) for doc in documents]
+# Check if tokenized documents are already saved
+print('Check if tokenized documents are already saved')
+tokenized_docs_path = "tokenized.pkl"
+if os.path.exists(tokenized_docs_path):
+    # Load tokenized documents from file
+    print('Load tokenized documents from file')
+    with open(tokenized_docs_path, "rb") as file:
+        tokenized_docs = pickle.load(file)
+else:
+    # Tokenize and remove stop words from the documents
+    print('Tokenize the documents')
+    swedish_stopwords = nltk.corpus.stopwords.words('swedish')
+    custom_stopwords_path = "stopwords.txt"
+    with open(custom_stopwords_path, "r", encoding="utf-8") as file:
+        custom_stopwords = file.read().splitlines()
+    stop_words = set(swedish_stopwords + custom_stopwords)
+    tokenized_docs = [
+        [token.lower() for token in nltk.word_tokenize(doc) if token.lower() not in stop_words]
+        for doc in documents
+    ]
+
+    # Save tokenized documents to file
+    with open(tokenized_docs_path, "wb") as file:
+        pickle.dump(tokenized_docs, file)
+end_time_ladda_data = time.time()
+elapsed_time = end_time_ladda_data - start_time_ladda_data
+print('Tokenize time:',elapsed_time)
 
 # Create a dictionary from the tokenized documents
+print('Create a dictionary from the tokenized documents')
 dictionary = corpora.Dictionary(tokenized_docs)
 
 # Create a corpus
+print('Create a corpus')
 corpus = [dictionary.doc2bow(doc) for doc in tokenized_docs]
 
 # Train the TF-IDF model on the corpus
+print('Train the TF-IDF model on the corpus')
 tfidf = models.TfidfModel(corpus)
 corpus_tfidf = tfidf[corpus]
 
 # Build an index
+print('Build an index')
 index_obj = similarities.SparseMatrixSimilarity(corpus_tfidf, num_features=len(dictionary))
+
+
 
 
 @app.route('/')

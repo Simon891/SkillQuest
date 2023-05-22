@@ -65,7 +65,7 @@ def main(yrke):
     for i, sentence in enumerate(summary, 1):
         print(f"{i}. {sentence.strip()}")  # Strip any leading/trailing spaces from the sentence
 
-    retur = '<br>'.join([f"{i}. {sentence.strip()}" for i, sentence in enumerate(summary, 1)])
+    retur = ' '.join(summary)
 
 
     return retur
