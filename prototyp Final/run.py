@@ -28,5 +28,9 @@ def send_selected():
         'antal': antal
                     })
 
+@app.route('/blank')
+def blank():
+    return render_template('blank.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
