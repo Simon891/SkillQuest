@@ -1,5 +1,10 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+
 body{
-    background-color: #252526;
+    background-color: #fffcf7;
     font-family: 'Lato';
     font-weight: 300;
     src: url('path-to-lato/Lato-Thin.ttf') format('truetype');
@@ -11,10 +16,10 @@ input{
     src: url('path-to-lato/Lato-Thin.ttf') format('truetype');
     width:100%;
     font-size: 25px;
-    margin-bottom:10px;
+    margin-bottom:0px;
     left:0px;
     right: 0px;
-    background-color: #64DE9E;
+    background-color: #c46e28;
     border: none;
     color: #1e1e1e;
     padding-top: 1px;
@@ -70,11 +75,12 @@ input:focus {
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #1e1e1e;
+    background-color: #d4813e;
     border-radius: 8px;
     transition: height 1s;
     overflow: hidden;
     opacity: 1;
+    border:2px #c46e28 solid;
   }
   
 
@@ -88,6 +94,7 @@ input:focus {
   }
 
 #mes{
+    display: none;
     height: 100px;
     width: 100%;
     position: fixed;
@@ -106,12 +113,13 @@ input:focus {
     bottom: 0px;
     right: 0px;
     left: 0px;
-    color: white;
+    color: #1e1e1e;
     font-size: 25px;
-    background-color: #1e1e1e;
+    background-color: #fffcf7;
     overflow: hidden;
     border-radius: 8px;
     transition: opacity 1s;
+    border:2px #c46e28 solid;
 }
 
 #laddar{
@@ -140,7 +148,7 @@ input:focus {
 #info_banner{
     width: 100%;
     text-align: center;
-    background-color: #64DE9E;
+    background-color: #c46e28;
     padding-top: 5px;
     padding-bottom: 5px;
     color: #1e1e1e;
@@ -154,13 +162,31 @@ input:focus {
 }
 
 #info_stang{
+    border-top: #c46e28 solid 2px;
+    cursor: pointer;
     padding-top: 5px;
     padding-bottom: 5px;
-    color: #1e1e1e;
-    background-color: lightcoral;
+    color: white;
+    background-color: #d4813e;
     text-align: center;
 }
 
-#info_stang:hover{
-    background-color: red;
+#sok_ams{
+    border-top: #c46e28 solid 2px;
+    cursor: pointer;
+    background-color: #d4813e;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: white;
+}
+
+#info_antal{
+    color:#d4813e;
+}
+
+#jobb_forslag_placeholder{
+    background-color: white;
+    color:black;
+    padding: 10px;
 }
