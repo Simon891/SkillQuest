@@ -4,8 +4,10 @@ jobbT = ''
 function updateInfoDiv(retur, antal) {
   const infoDiv = document.getElementById('info_text');
   const infoDivAntal = document.getElementById('info_antal');
-
+  const orginal = "Baserat på antal-n/a jobbannonser från 2022, så är följande de mest relevanta meningarna för jobbT-n/a:<br><br>";
+  
   infoDiv.innerHTML = retur;
+  infoDivAntal.innerHTML = orginal;
   infoDivAntal.innerHTML = infoDivAntal.innerHTML.replace('antal-n/a', antal);
   infoDivAntal.innerHTML = infoDivAntal.innerHTML.replace('jobbT-n/a', jobbT);
 }
