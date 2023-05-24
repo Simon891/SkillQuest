@@ -35,8 +35,9 @@ function updateInfoDiv(retur, antal) {
         const infoBannerDiv = document.getElementById('info_banner');
         const infoAntalDiv = document.getElementById('info_antal');
         const infoStangDiv = document.getElementById('info_stang');
+        const infoSokAmsDiv = document.getElementById('sok_ams');
         infoDiv.style.height = 'auto';
-        const contentHeight = infoTextDiv.offsetHeight + infoBannerDiv.offsetHeight + infoAntalDiv.offsetHeight + infoStangDiv.offsetHeight;
+        const contentHeight = infoTextDiv.offsetHeight + infoBannerDiv.offsetHeight + infoAntalDiv.offsetHeight + infoStangDiv.offsetHeight + infoSokAmsDiv.offsetHeight;
         infoDiv.style.height = contentHeight + 'px';
 
         
@@ -103,4 +104,10 @@ function updateInfoDiv(retur, antal) {
     setTimeout(sok_hight, 500);
   });
   
-
+  document.addEventListener("DOMContentLoaded", function() {
+    var sokAmsElement = document.getElementById("sok_ams");
+    sokAmsElement.addEventListener("click", function() {
+      var address = "https://arbetsformedlingen.se/platsbanken/annonser?q="+jobbT;
+      window.open(address, "_blank");
+    });
+  });
