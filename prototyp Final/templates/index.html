@@ -24,7 +24,7 @@
     </div>
     <div id="forslag_ruta" class="">
         <form id="myForm" action="{{ url_for('process_input') }}" method="POST">
-            <input type="text" name="input_value" placeholder="Skriv in jobb egenskap" value="{{ input_value }}" required>
+            <input type="text" name="input_value" placeholder="" value="{{ input_value }}" required>
             <!--<button type="submit">Submit</button>-->
         </form>
         <div id="resultat">
@@ -48,8 +48,9 @@
 
     <div id="info" class="fade">
       <div id="info_banner">Info</div>
-      <div id="info_antal">Baserat på antal-n/a jobb anonser så är fäljande de mest relevanta meningarna för jobbT-n/a:</div>
+      <div id="info_antal">Baserat på antal-n/a jobbannonser från 2022, så är följande de mest relevanta meningarna för jobbT-n/a:<br><br></div>
       <div id="info_text"></div>
+      <div id="sok_ams" >Sök på Platsbanken</div>
       <div id="info_stang">Stäng</div>
     </div>
 
